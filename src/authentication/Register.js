@@ -2,11 +2,12 @@ import React, { useState,useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillMail, AiOutlineEye, AiOutlineEyeInvisible ,AiFillLock } from 'react-icons/ai';
 import {ImCross} from 'react-icons/im'
-import Google from '../assets/google_icon.png'
-
+import Google from '../assets/img/google_icon.png'
+import Login from './Login';
 const Register = ({setShowLogin}) => {
     const [passwordVisible, setPasswordVisible] = useState(false);
     const [password, setPassword] = useState('');
+    const [showLogin,setLogin] =useState(false)
     // const [showRegister, setShowRegister] = useState(false);
     const modalRef = useRef();
   
@@ -19,6 +20,9 @@ const Register = ({setShowLogin}) => {
     const handleCloseModal = () => {
       setShowLogin(false);
     };
+    const handlelogin = ()=>{
+      setLogin(true);
+    }
   return (
     <>
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
@@ -63,11 +67,11 @@ const Register = ({setShowLogin}) => {
           </div>
           <div className="login_btn mt-4">
             <button className=" bg-custom-btn text-white py-2 rounded-[10px] w-[370px] ml-[150px]">
-              Log In
+              Sign Up
             </button>
-            <p className="text-sm text-[#00A6DB] mt-2 cursor-pointer ml-[150px]">
+            {/* <p className="text-sm text-[#00A6DB] mt-2 cursor-pointer ml-[150px]">
               Forgot password?
-            </p>
+            </p> */}
           </div>
           <p className="text-center mt-4 ml-[30px] text-[#D3D3D3]">---- or ----</p>
           <div className="login_google mt-4 w-[370px] ml-[150px] flex bg-white border-2 border-[#00A6DB] rounded-[12px]">
@@ -78,11 +82,16 @@ const Register = ({setShowLogin}) => {
           </div>
           <div className="register mt-4 text-center w-[370px] ml-[60px] mb-[50px]">
             <p className='text-sm text-[#ADADAD]'>
-              Have an account? <Link className='text-[#00A6DB] font-base'>Login here!</Link>
+              Have an account? <Link className='text-[#00A6DB] font-base' onClick={handlelogin} >Login here!</Link>
             </p>
           </div>
         </div>
       </div>
+      {showLogin && (
+        <div ref={modalRef}>
+          <Login setShowLogin={setShowLogin} />
+        </div>
+      )}
     </>
   )
 }

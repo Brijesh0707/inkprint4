@@ -1,159 +1,584 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import Line from '../assets/line2.png'
-import InkLogo from '../assets/inkprintc.png'
-import Insta from '../assets/insta3.png'
-import Face from '../assets/face3.png'
-import You from '../assets/you3.png'
+import { Link } from "react-router-dom";
+import Logo from '../assets/img/Logo.png';
+import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
+import { TfiYoutube } from "react-icons/tfi";
 
-const Footer = () => {
-  return (
-    <>
-        <div className='footer-wrapper bg-white'>
-        <h1 className='text-[#6D6E70] text-xl font-semibold pl-10 pt-5'>Our Products</h1>
-            <div className='wrapper flex justify-evenly mt-5'>
-            <div className='wrapper1 flex'>
-                <div className='items1 mr-5'>
-                 <ul>
-                    <Link><li className='text-[#ADADAD] mt-3'>Banner</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Bill Books</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Booklets</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>BookMarks</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Bottle Neck Hang Tags</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Box Packaging</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Brochures</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Business Cards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Button Badges</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Calendars</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Canvas Prints</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Carbonless Forms</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Carry Bags</li></Link>
-
-                 </ul>
-
-                </div>
-                <div className='items2 pl-5'>
-                <ul>
-                <Link><li className='text-[#ADADAD] mt-3'>Catalogs</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Certificates</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Conference Pads</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Counter Cards</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Custom Tissue Paper</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Customized Mugs</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Door Hangers</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Embossed Foil Business Cards</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Embossed Spot UV Business Cards</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Envelopes</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Flyers</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Gift Vouchers</li></Link>
-                <Link><li className='text-[#ADADAD] mt-3'>Graphics T-shirts</li></Link>
-                </ul>
-                    
-                </div>
-            </div>
-            <div className='wrapper2 flex '>
-                <div className='item3  mr-10'>
+function Footer() {
+    return (
+        <>
+            <div className="pt-8 px-[60px] pb-[60px] block md:hidden">
+                <h3 className="text-[20px] font-medium mb-[20px]">
+                    Our Products
+                </h3>
+                <div className="flex justify-between text-[14px]">
                     <ul>
-                    <Link><li className='text-[#ADADAD] mt-3'>Greeting Cards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Hang Tags</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Header cards/ Bag Toppers</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>High Texture Luxury Visiting Cards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>ID Cards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Invitation Cards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Lanyards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Letterheads</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Magazines</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Medical Prescription Pads</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Menus</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Notebooks</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Notepads</li></Link>
-
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Monocarton Box Packaging</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Carry Bags</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Custom Tissue Papers</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Gift Vouchers</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Hang Tags</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Header Cards/ Bag Toppers</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Placemats</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Printed Butter Papers</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Printed Packaging Tapes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Product Labels & Stickers</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Wrapping Papers</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Food Delivery Bags</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Master Cartons</Link>
+                        </ol>
+                    </ul>
+                    <ul>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">3 Ply Corrugated Boxes </Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">5 Ply Corrugated Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Bakery Packaging Material</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Cake Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Snacks Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Dosa Packaging Box</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Rolls Packaging Box</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Salad Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Sandwich Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Noodles Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Burger Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Multicolor Corrugated Mailer Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Multicolor Corrugated Product Boxes</Link>
+                        </ol>
+                    </ul>
+                    <ul>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Shredded Paper Fills</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Honey Comb Packaging Rolls</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Packaging Sleeves</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Rigid Gift Boxes/ Paper Board Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Magnetic Gift Boxes/ Paper Board Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Sliding Gift Boxes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Bill Books</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Booklets</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Bookmarks</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Brochures</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Business cards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Calendars</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Canvas Prints</Link>
+                        </ol>
+                    </ul>
+                    <ul>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Brochures</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Business Cards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Carbonless Forms</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Catalogs</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Embossed Foil Business Cards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Embossed Spot UV Business Cards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Envelopes</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Flyers</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">High Texture Luxury Visiting Cards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">ID Cards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Invitation Cards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Lanyards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Letterheads</Link>
+                        </ol>
+                    </ul>
+                    <ul>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Magazines</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Medical Prescription Pads</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Menus</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Notebooks</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Notepads</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Postcards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Posters</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Sandwich Business Cards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Stickers & Labels</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Ultra Thick Business Cards</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Vinyl Prints & Posters(Large)</Link>
+                        </ol>
+                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                            <Link to="/">Visiting Cards</Link>
+                        </ol>
                     </ul>
                 </div>
-                <div className='items4'>
-                    <ul>
-                    <Link><li className='text-[#ADADAD] mt-3'>Photo Books</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Photo Mugs</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Photo T-Shirts</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Placemats</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Pocket Folders</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>PostCards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Posters</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Printed Butter Papers</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Printed Packaging Tapes</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Product Labels & Stickers</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Receipt Books</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Roll Up Standee/Banners</li></Link>
-                  
-
-
-                    </ul>
+                <div className="flex justify-center mx-[400px] my-[40px]">
+                    <hr className="border-t-2 border-green w-full" />
                 </div>
-                <div className='items5 ml-10'>
-                    <ul>
-                    <Link><li className='text-[#ADADAD] mt-3'>Sandwich Business Cards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Stickers & Labels</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>T-Shirts</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Table tent Cards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Ultra Thick Business Cards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Vinyl Prints & Posters(Large)</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Visiting Cards</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Wrapping Papers</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Greeting Cards</li></Link>
-                    </ul>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div className='footer2-wrapper mt-[30px]'>
-            <div className='footer2-wrapper1 flex justify-center items-center mt-[50px]'>
-            <img src={Line} alt='break-line' />
-            </div>
-           <div className='footer2-wrapper3 flex justify-between mt-10'>
-           <div className='logocopyright ml-8'>
-             <img src={InkLogo} alt='inklogo with copyright'/>
-           </div>
-           <div className='information'>
-                <ul>
-                    <h4 className='text-[#6D6E70] text-2xl font-semibold '>Information</h4>
-                    <Link><li className='text-[#ADADAD] mt-3'>About Us</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Contact Us</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Blog</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Privacy Policy</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Terms & Conditions</li></Link>
-
-                </ul>
-            </div>
-            <div className='myaccount'>
-                <ul>
-                    <h4 className='text-[#6D6E70] text-2xl font-semibold '>My Account</h4>
-                    <Link><li className='text-[#ADADAD] mt-3'>Account Details</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Orders</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Wishlist</li></Link>
-                    <Link><li className='text-[#ADADAD] mt-3'>Cart</li></Link>
-
-                </ul>
-            </div>
-            <div className='socialmeida'>
-             <h4 className='text-[#6D6E70] text-2xl font-semibold '>Follow Us On</h4>
-             <div className='flex justify-around mt-3'>
-                    <img src={Insta} alt='instagram icon' className='w-5 h-5' />
-                    <img src={Face} alt='facebook icon' className='w-5 h-5' />
-                    <img src={You} alt='youtube icon' className='w-5 h-5' />
+                <div className="font-light text-custom-text-grey text-[14px] flex justify-between">
+                    <div className="w-1/5">
+                        <img src={Logo} alt="inkprint logo" />
+                        <p>
+                            Copyright &copy; 2023 <span className="text-custom-text-green">Inkprint</span>, All Rights Reserved.
+                        </p>
                     </div>
+                    <div className="w-1/5">
+                        <h3 className="text-[20px] font-medium mb-[20px] text-black">
+                            Information
+                        </h3>
+                        <ul>
+                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                                <Link to="/aboutus">About Us</Link>
+                            </ol>
+                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                                <Link to="/contactus">Contact Us</Link>
+                            </ol>
+                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                                <Link to="/blogs">Blog</Link>
+                            </ol>
+                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                                <Link to="/privacypolicy">Privacy Policy</Link>
+                            </ol>
+                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                                <Link to="/termsandconditions">Terms &amp; Conditions</Link>
+                            </ol>
+                        </ul>
+                    </div>
+                    <div className="w-1/5">
+                        <h3 className="text-[20px] font-medium mb-[20px] text-black">
+                            My Account
+                        </h3>
+                        <ul>
+                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                                <Link to="/">Account Details</Link>
+                            </ol>
+                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                                <Link to="/">Orders</Link>
+                            </ol>
+                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                                <Link to="/">Wishlist</Link>
+                            </ol>
+                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                                <Link to="/">Cart</Link>
+                            </ol>
+                        </ul>
+                    </div>
+                    <div className="w-1/5">
+                        <h3 className="text-[20px] font-medium mb-[20px] text-black">
+                            Follow Us On
+                        </h3>
+                        <ul className="flex text-[25px]">
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><Link to="/"><AiFillInstagram /></Link></ol>
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><Link to="/"><AiFillFacebook /></Link></ol>
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><Link to="/"><TfiYoutube /></Link></ol>
+                        </ul>
+                    </div>
+                    <div className="w-1/5">
+                        <h3 className="text-[20px] font-medium mb-[20px] text-black">
+                            Address
+                        </h3>
+                        <p>
+                            Turtle Media Pvt. Ltd., 9 DSIDC Sheds, IInd Floor, Okhla Industrial Area Phase I,
+                            New Delhi - 110020, India
+                        </p>
+                        <p className="py-[8px]">
+                            <span className="font-medium">
+                                Phone:
+                            </span>
+                            <a href="tel:9772906080"> +91-977-290-6080 (India)</a>
+                        </p>
+                        <p>
+                            <span className="font-medium">Email: </span>
+                            <a href="mailto:contact@inkprint.in">Contact@Inkprint.In</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div className='address w-[290px]'>
-                <ul>
-                    <h4 className='text-[#6D6E70] text-2xl font-semibold '>Address</h4>
-                    <li className='text-[#ADADAD] mt-3'>Turtle Media Pvt. Ltd., 9 DSIDC Sheds, IInd Floor, Okhla Industrial Area Phase I, New Delhi - 110020, India</li>
-                    <li className='text-[#ADADAD]'><span className='text-[#9A9A9A] font-medium'>Phone:</span>+91-977-290-6080 (India)</li>
-                    <li className='text-[#ADADAD]'><span className='text-[#9A9A9A] font-medium' >Email:</span>Contact@Inkprint.In</li>
-                </ul>
+            <div className="md:block hidden p-[16px]">
+                <div>
+                    <h4 className="text-[14px] font-semibold text-custom-text-darkGrey">Our Products</h4>
+                    <div className="flex justify-between text-[8px]">
+                        <div>
+                            <ul>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Monocarton Box Packaging</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Carry Bags</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Custom Tissue Papers</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Gift Vouchers</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Hang Tags</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Header Cards/ Bag Toppers</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Placemats</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Printed Butter Papers</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Printed Packaging Tapes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Product Labels & Stickers</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Wrapping Papers</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Food Delivery Bags</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Master Cartons</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">3 Ply Corrugated Boxes </Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">5 Ply Corrugated Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Bakery Packaging Material</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Cake Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Snacks Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Dosa Packaging Box</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Rolls Packaging Box</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Salad Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Sandwich Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Noodles Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Burger Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Multicolor Corrugated Mailer Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Multicolor Corrugated Product Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Shredded Paper Fills</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Honey Comb Packaging Rolls</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Packaging Sleeves</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Rigid Gift Boxes/ Paper Board Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Magnetic Gift Boxes/ Paper Board Boxes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Sliding Gift Boxes</Link>
+                                </ol>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Bill Books</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Booklets</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Bookmarks</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Brochures</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Business cards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Calendars</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Canvas Prints</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Brochures</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Business Cards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Carbonless Forms</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Catalogs</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Embossed Foil Business Cards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Embossed Spot UV Business Cards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Envelopes</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Flyers</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">High Texture Luxury Visiting Cards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">ID Cards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Invitation Cards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Lanyards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Letterheads</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Magazines</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Medical Prescription Pads</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Menus</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Notebooks</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Notepads</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Postcards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Posters</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Sandwich Business Cards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Stickers & Labels</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Ultra Thick Business Cards</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Vinyl Prints & Posters(Large)</Link>
+                                </ol>
+                                <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[6px] font-light">
+                                    <Link to="/">Visiting Cards</Link>
+                                </ol>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="flex justify-center mx-[10px] my-[40px]">
+                        <hr className="border-t-2 border-green w-1/3" />
+                    </div>
+                    <div className="flex">
+                        <div className="w-[200px]">
+                            <h4 className="text-[14px] font-semibold text-custom-text-darkGrey mb-[10px]">Information</h4>
+                            <ul>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300  text-[8px] text-custom-text-grey">
+                                <Link to="/aboutus">About Us</Link>
+                            </ol>
+                            <ol className="mb-[06px] hover:text-custom-text-green transition duration-300  text-[8px] text-custom-text-grey">
+                                <Link to="/contactus">Contact Us</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300  text-[8px] text-custom-text-grey">
+                                <Link to="/blogs">Blog</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300  text-[8px] text-custom-text-grey">
+                                <Link to="/privacypolicy">Privacy Policy</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300  text-[8px] text-custom-text-grey">
+                                <Link to="/termsandconditions">Terms &amp; Conditions</Link>
+                            </ol>
+                        </ul>
+                        </div>
+                        <div>
+                        <h4 className="text-[14px] font-semibold text-custom-text-darkGrey mb-[10px]">My Account</h4>
+                        <ul>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300 text-[8px] text-custom-text-grey">
+                                <Link to="/">Account Details</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300 text-[8px] text-custom-text-grey">
+                                <Link to="/">Orders</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300 text-[8px] text-custom-text-grey">
+                                <Link to="/">Wishlist</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300 text-[8px] text-custom-text-grey">
+                                <Link to="/">Cart</Link>
+                            </ol>
+                        </ul>
+                        </div>
+                    </div>
+                    <div className="mt-[24px] text-custom-text-grey text-[8px] w-3/4">
+                        <h4 className="text-[14px] font-semibold text-custom-text-darkGrey mb-[10px]">Address</h4>
+                        <p>Turtle Media Pvt. Ltd., 9 DSIDC Sheds, IInd Floor, Okhla Industrial Area Phase I, New Delhi - 110020, India</p>
+                        <p className="py-[8px]">
+                            <span className="font-medium">
+                                Phone:
+                            </span>
+                            <a href="tel:9772906080"> +91-977-290-6080 (India)</a>
+                        </p>
+                        <p>
+                            <span className="font-medium">Email: </span>
+                            <a href="mailto:contact@inkprint.in">Contact@Inkprint.In</a>
+                        </p>
+                    </div>
+                    <div className="mt-[30px] flex">
+                        <div>
+                            <img src={Logo} alt="logo" className="w-[78px]"/>
+                            <p className="text-custom-text-grey text-[8px] w-10/12">
+                            Copyright &copy; 2023 <span className="text-custom-text-green">Inkprint</span>, All Rights Reserved.
+                        </p>
+                        </div>
+                        <div>
+                            <h4 className="text-[14px] font-semibold text-custom-text-darkGrey mb-[10px]">Follow Us On</h4>
+                            <div>
+                            <ul className="flex text-[16px] text-custom-text-grey">
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><Link to="/"><AiFillInstagram /></Link></ol>
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><Link to="/"><AiFillFacebook /></Link></ol>
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><Link to="/"><TfiYoutube /></Link></ol>
+                        </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-           </div>
-        </div>
-    </>
-  )
+        </>
+    )
 }
 
 export default Footer
