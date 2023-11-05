@@ -67,7 +67,7 @@ const Register = ({setShowLogin}) => {
           </div>
           <div className="login_btn mt-4">
             <button className=" bg-custom-btn text-white py-2 rounded-[10px] w-[370px] ml-[150px]">
-              Sign Up
+              Sign Ups
             </button>
             {/* <p className="text-sm text-[#00A6DB] mt-2 cursor-pointer ml-[150px]">
               Forgot password?

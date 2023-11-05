@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Logo from '../assets/img/Logo.png';
 import Login from '../authentication/Login';
 import { FiSearch } from 'react-icons/fi';
-import { BsTelephone } from "react-icons/bs";
+import { BsTelephone,BsFillPersonFill } from "react-icons/bs";
 import { IoMdCart } from "react-icons/io";
 import navImg from '../assets/img/navImg.png';
 import { BsArrowUpRight } from "react-icons/bs";
@@ -46,6 +46,8 @@ const Navbar = () => {
   const [a5, setA5] = useState(false);
   const [a6, setA6] = useState(false);
   const modalRef = useRef();
+  const Token = localStorage.getItem("token")
+  const RegToken = localStorage.getItem("Register_token");
 
   const handleLoginClick = () => {
     setShowLogin(true);
@@ -62,7 +64,15 @@ const Navbar = () => {
     return () => {
       document.removeEventListener('mousedown', handleOutsideClick);
     };
+   
   }, []);
+
+  useEffect(() => {
+    if (Token || RegToken) {
+      setShowLogin(false);
+    }
+  
+  }, [Token,RegToken]);
 
   return (
     <>
@@ -86,9 +96,17 @@ const Navbar = () => {
                 <BsTelephone className='mr-2' />
                 <span><a href='tel:9772906080'>+91 9772 9060 80</a></span>
               </div>
-              <div className="login mr-6">
-                <button className="bg-custom-btn text-white w-[90px] h-[40px] rounded" onClick={handleLoginClick}>Log in</button>
-              </div>
+              {Token || RegToken ? (
+           
+            <button className='border-blue mr-3 border-[1px] rounded-[4px] text-custom-text w-[180px] flex pl-3 pt-[7px] h-[40px] font-medium'>
+              My Account <BsFillPersonFill className='border-blue  mr-2 ml-2 mt-1' />
+            </button>
+          ) : (
+         
+            <button className='bg-custom-btn text-white w-[90px] mr-4 h-[40px] rounded' onClick={handleLoginClick}>
+              Log in
+            </button>
+          )}
               <div className='text-custom-text-green'>
                 <IoMdCart className='text-4xl' />
               </div>
