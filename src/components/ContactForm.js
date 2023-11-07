@@ -14,6 +14,7 @@ function ContactForm() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
+  const [message,seMessage] = useState('');
   const Navigate = useNavigate()
  
 
@@ -24,6 +25,7 @@ function ContactForm() {
         last_name: lastName,
         email: email,
         subject: subject,
+        message:message
      
       };
       console.log(formData);
@@ -113,7 +115,7 @@ function ContactForm() {
         rows="5"
         placeholder="Any message for us.."
         className="border border-grayLight py-[6px] px-[12px] rounded focus:outline-none mb-[24px] w-full"
-     
+        onChange={(e) => seMessage(e.target.value)}
       />
       <div onClick={handleSubmit}>
         <CtnBtn

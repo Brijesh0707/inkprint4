@@ -27,6 +27,7 @@ const ProductCard = (props) => {
               navigation={{
                 prevEl: prevRef.current,
                 nextEl: nextRef.current,
+                clickable:true
               }}
               modules={[Navigation]}
               className="mySwiper"

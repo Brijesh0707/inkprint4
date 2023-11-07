@@ -35,6 +35,7 @@ import {
 } from '@chakra-ui/react'
 
 import { RxTextAlignJustify } from "react-icons/rx";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -79,9 +80,11 @@ const Navbar = () => {
       <div className='shadow-[0_2px_2px_0px_rgba(175,196,12,0.08)] px-[20px] py-[15px] block md:hidden'>
         <div className="w-full">
           <div className="flex justify-between">
+          <Link to="/">
             <div className="logo ml-10">
               <img src={Logo} alt="Logo" />
             </div>
+            </Link>
 
             <div className="flex items-center w-2/3">
               <div className='flex items-center py-[10px] px-[24px] border rounded-full w-1/2 border-grayMid'>
@@ -98,7 +101,7 @@ const Navbar = () => {
               </div>
               {Token || RegToken ? (
            
-            <button className='border-blue mr-3 border-[1px] rounded-[4px] text-custom-text w-[180px] flex pl-3 pt-[7px] h-[40px] font-medium'>
+            <button className='border-blue mr-3 border-[1px] rounded-[4px] text-custom-text w-[180px] flex pl-3 pt-[7px] h-[40px] font-medium '>
               My Account <BsFillPersonFill className='border-blue  mr-2 ml-2 mt-1' />
             </button>
           ) : (
