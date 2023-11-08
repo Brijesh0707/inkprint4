@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Logo from '../assets/img/Logo.png';
 import Login from '../authentication/Login';
 import { FiSearch } from 'react-icons/fi';
-import { BsTelephone,BsFillPersonFill } from "react-icons/bs";
+import { BsTelephone,BsFillPersonFill,BsPerson } from "react-icons/bs";
 import { IoMdCart } from "react-icons/io";
 import navImg from '../assets/img/navImg.png';
 import { BsArrowUpRight } from "react-icons/bs";
@@ -82,18 +82,18 @@ const Navbar = () => {
           <div className="flex justify-between">
           <Link to="/">
             <div className="logo ml-10">
-              <img src={Logo} alt="Logo" />
+              <img src={Logo} alt="Logo" className='w-[150px] h-[60px]' />
             </div>
             </Link>
 
             <div className="flex items-center w-2/3">
-              <div className='flex items-center py-[10px] px-[24px] border rounded-full w-1/2 border-grayMid'>
+              <div className='flex items-center py-[10px] h-[37px] px-[24px] border rounded-full w-[500px] border-grayMid'>
                 <input placeholder='Search Products...' className='w-full focus:outline-none' />
-                <FiSearch className='text-2xl text-custom-text-grey' />
+                <FiSearch className='text-2xl text-custom-text-grey cursor-pointer' />
               </div>
-              <div className={`text-custom-text flex items-center mx-[40px] w-[22vw] transition-all ${bulk ? 'hidden' : ''} font-semibold`} onMouseOver={() => setBulk(true)}>
+              <div className={`text-custom-text flex items-center mx-[25px] ml-[40px]   w-[22vw] transition-all ${bulk ? 'hidden' : ''} font-semibold`} onMouseOver={() => setBulk(true)}>
                 <BsTelephone className='mr-2' />
-                <span>Contact us for bulk order</span>
+                <span className='text-[14px]'>Contact us for bulk order</span>
               </div>
               <div className={`text-custom-text flex items-center mx-[40px] w-[215px] transition-all ${bulk ? '' : 'hidden'} font-semibold`} onMouseLeave={() => setBulk(false)}>
                 <BsTelephone className='mr-2' />
@@ -101,17 +101,17 @@ const Navbar = () => {
               </div>
               {Token || RegToken ? (
            
-            <button className='border-blue mr-3 border-[1px] rounded-[4px] text-custom-text w-[180px] flex pl-3 pt-[7px] h-[40px] font-medium '>
-              My Account <BsFillPersonFill className='border-blue  mr-2 ml-2 mt-1' />
+            <button className='border-blue text-[15px] mr-3 border-[1px] rounded-[4px] text-custom-text w-[180px] flex pl-3 pt-[8px] h-[40px] font-medium '>
+              My Account <BsPerson className='border-blue w-4 h-4   mr-2 ml-2 mt-[3px]' />
             </button>
           ) : (
          
-            <button className='bg-custom-btn text-white w-[90px] mr-4 h-[40px] rounded' onClick={handleLoginClick}>
+            <button className='bg-custom-btn text-white pb-1 w-[115px] mr-5 h-[35px] rounded' onClick={handleLoginClick}>
               Log in
             </button>
           )}
               <div className='text-custom-text-green'>
-                <IoMdCart className='text-4xl' />
+                <IoMdCart className='text-4xl cursor-pointer' />
               </div>
             </div>
           </div>

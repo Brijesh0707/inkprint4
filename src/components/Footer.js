@@ -10,8 +10,8 @@ function Footer() {
                 <h3 className="text-[20px] font-medium mb-[20px]">
                     Our Products
                 </h3>
-                <div className="flex justify-between text-[14px]">
-                    <ul>
+                <div className="flex justify-between lg:justify-around text-[14px]">
+                    <ul >
                         <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
                             <Link to="/">Monocarton Box Packaging</Link>
                         </ol>
@@ -218,8 +218,10 @@ function Footer() {
                     <hr className="border-t-2 border-green w-full" />
                 </div>
                 <div className="font-light text-custom-text-grey text-[14px] flex justify-between">
-                    <div className="w-1/5">
-                        <img src={Logo} alt="inkprint logo" />
+                    <div className="w-1/5 mr-10">
+                      <Link to='/'>
+                      <img src={Logo} alt="inkprint logo" />
+                      </Link>
                         <p>
                             Copyright &copy; 2023 <span className="text-custom-text-green">Inkprint</span>, All Rights Reserved.
                         </p>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoMail } from "react-icons/io5";
 import { FaLock } from "react-icons/fa";
-import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
+import { BsFillEyeFill, BsFillEyeSlashFill,BsFillPersonFill } from "react-icons/bs";
 import AuthComponentBtn from "./AuthComponentBtn";
 import GoogleAuthButton from "./GoogleAuthButton";
 import { Link } from "react-router-dom";
@@ -44,28 +44,28 @@ function Loginform({ setLogForm, logForm }) {
   console.log("hello from login");
   return (
     <div className='h-full w-full flex justify-center items-center'>
-      <div className='w-[50%]'>
-        <h4 className="font-medium text-[36px] mb-[20px]">Log In</h4>
+      <div className='w-[55%]'>
+        <h4 className="font-medium text-[36px] mb-[7px]">Log In</h4>
         <p className="text-custom-text">Elevate Your Brand with Premium Printing Solutions</p>
         <div className="flex items-center w-full border-grayMid border rounded-lg text-custom-text-grey px-[12px] py-[6px] mt-[24px] mb-[20px]">
         <IoMail/>
         <input type="text" name="email" placeholder="Username or Email Address" className="text-black focus:outline-none px-[12px] w-full"  onChange={(e) => setEmail(e.target.value)}/>
       </div>
       <div className="flex items-center w-full border-grayMid border rounded-lg text-custom-text-grey px-[12px] py-[6px] mb-[40px]">
-        <FaLock/>
+        <FaLock className="text-[#D0D0D0]"/>
         <input type={passwordToggle? 'password' : 'text'} name="password" placeholder="Password"  className="text-black focus:outline-none px-[12px] w-full"  onChange={(e) => setPassword(e.target.value)}/>
         <button onClick={()=>{setpasswordToggle(!passwordToggle)}}>{passwordToggle ? <BsFillEyeSlashFill /> : <BsFillEyeFill />}</button>
       </div>
       <div onClick={handleLogin}>
       <AuthComponentBtn>Login</AuthComponentBtn>
       </div>
-      <p className="font-medium text-[14px] cursor-pointer text-custom-text mt-[17px]">Forgot Password?</p>
-      <div className="flex w-full justify-center items-center mt-[25px]">
+      <p className="font-medium text-[14px] cursor-pointer text-custom-text mt-[15px]">Forgot Password?</p>
+      <div className="flex w-full justify-center items-center mt-[1px]">
         <hr className="border-t border-grayLight w-[57px]"/>
         <span className="mx-[10px] text-custom-text-grey">or</span>
         <hr className="border-t border-grayLight w-[57px]"/>
       </div>
-      <GoogleAuthButton>Log in with Google</GoogleAuthButton>
+      <GoogleAuthButton><span className="font-medium">Log in with Google</span></GoogleAuthButton>
       <p className="font-medium text-[14px] text-custom-text-grey mt-[20px]">New to InkPrint? <button onClick={() => { setLogForm(!logForm) }} className="text-custom-text">Register here!</button></p>
       </div>
       <ToastContainer position="top-center" autoClose={5000} hideProgressBar={false} />
@@ -137,17 +137,17 @@ function SignupForm({ setLogForm, logForm }) {
 
   return (
     <div className='h-full w-full flex justify-center items-center'>
-      <div className='w-[50%]'>
-        <h4 className="font-medium text-[36px] mb-[20px]">Sign Up</h4>
+      <div className='w-[58%]'>
+        <h4 className="font-medium text-[36px] mb-[7px]">Sign Up</h4>
         <p className="text-custom-text">Elevate Your Brand with Premium Printing Solutions</p>
-        <GoogleAuthButton>Sign up with Google</GoogleAuthButton>
-        <div className="flex w-full justify-center items-center mt-[20px]">
+        <GoogleAuthButton><span className="font-medium">Sign up with Google</span></GoogleAuthButton>
+        <div className="flex w-full justify-center items-center mt-[15px]">
           <hr className="border-t border-grayLight w-[57px]" />
           <span className="mx-[10px] text-custom-text-grey">or</span>
           <hr className="border-t border-grayLight w-[57px]" />
         </div>
         <div className="flex items-center w-full border-grayMid border rounded-lg text-custom-text-grey px-[12px] py-[6px] mt-[10px] mb-[1px]">
-          <IoMail />
+        <BsFillPersonFill />
           <input type="text" name="username" placeholder="Username" className="text-black focus:outline-none px-[12px] w-full" onChange={(e) => setUsername(e.target.value)} value={username} />
         </div>
         <div className="flex items-center w-full border-grayMid border rounded-lg text-custom-text-grey px-[12px] py-[6px] mt-[10px] mb-[10px]">
@@ -155,12 +155,12 @@ function SignupForm({ setLogForm, logForm }) {
           <input type="text" name="email" placeholder="Your Email Address" className="text-black focus:outline-none px-[12px] w-full" onChange={(e) => setEmail(e.target.value)} value={email} />
         </div>
         <div className="flex items-center w-full border-grayMid border rounded-lg text-custom-text-grey px-[12px] py-[6px] mb-[12px]">
-          <FaLock />
+          <FaLock className="text-[#D0D0D0] w-4 h-4" />
           <input type={passwordToggle ? 'password' : 'text'} name="password" placeholder="Password" className="text-black focus:outline-none px-[12px] w-full" onChange={(e) => setPassword(e.target.value)} value={password} />
           <button onClick={() => { setpasswordToggle(!passwordToggle) }}>{passwordToggle ? <BsFillEyeSlashFill /> : <BsFillEyeFill />}</button>
         </div>
         <div className="flex items-center w-full border-grayMid border rounded-lg text-custom-text-grey px-[12px] py-[6px] mb-[12px]">
-          <FaLock />
+          <FaLock className="text-[#D0D0D0] w-4 h-4" />
           <input type={passwordToggle ? 'password' : 'text'} name="password" placeholder="Confirm Password" className="text-black focus:outline-none px-[12px] w-full" onChange={(e) => setPassword2(e.target.value)} value={password2} />
           <button onClick={() => { setpasswordToggle(!passwordToggle) }}>{passwordToggle ? <BsFillEyeSlashFill /> : <BsFillEyeFill />}</button>
         </div>
