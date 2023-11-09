@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import PageTopNavigation from "../components/PageTopNavigation";
+import { Link } from "react-router-dom";
 
 function About() {
     useEffect(() => {
@@ -70,7 +71,9 @@ function About() {
                 Office Hours: [Insert Operating Hours]<br/>
                 Social Media: [Insert Links to Social Media Profiles]<br/>
                 We look forward to hearing from you and helping you achieve exceptional printing and packaging solutions.</p>
-            <span className="text-custom-text md:text-[12px] text-lg">Your success is our priority!</span>
+                <Link to="/contactus">
+            <span className="text-custom-text md:text-[12px] text-lg cursor-pointer">Your success is our priority!</span>
+            </Link>
         </div>
     )
 }

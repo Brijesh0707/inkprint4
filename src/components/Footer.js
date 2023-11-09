@@ -573,6 +573,7 @@ function Footer() {
                             <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><Link to="/"><AiFillInstagram /></Link></ol>
                             <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><Link to="/"><AiFillFacebook /></Link></ol>
                             <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><Link to="/"><TfiYoutube /></Link></ol>
+                            <h1>HELLO kese ho</h1>
                         </ul>
                             </div>
                         </div>

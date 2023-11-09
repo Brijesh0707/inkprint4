@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Logo from '../assets/img/Logo.png';
 import Login from '../authentication/Login';
 import { FiSearch } from 'react-icons/fi';
-import { BsTelephone,BsFillPersonFill,BsPerson } from "react-icons/bs";
+import { BsTelephone,BsFillPersonFill,BsPerson ,BsCart3} from "react-icons/bs";
 import { IoMdCart } from "react-icons/io";
 import navImg from '../assets/img/navImg.png';
 import { BsArrowUpRight } from "react-icons/bs";
@@ -110,8 +110,8 @@ const Navbar = () => {
               Log in
             </button>
           )}
-              <div className='text-custom-text-green'>
-                <IoMdCart className='text-4xl cursor-pointer' />
+              <div className='text-custom-text-green font-semibold cursor-pointer'>
+                <BsCart3 className='w-[30px] h-[30px] font-semibold '/>
               </div>
             </div>
           </div>

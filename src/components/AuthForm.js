@@ -44,7 +44,7 @@ function Loginform({ setLogForm, logForm }) {
   console.log("hello from login");
   return (
     <div className='h-full w-full flex justify-center items-center'>
-      <div className='w-[55%]'>
+      <div className='w-[49%]'>
         <h4 className="font-medium text-[36px] mb-[7px]">Log In</h4>
         <p className="text-custom-text">Elevate Your Brand with Premium Printing Solutions</p>
         <div className="flex items-center w-full border-grayMid border rounded-lg text-custom-text-grey px-[12px] py-[6px] mt-[24px] mb-[20px]">
@@ -99,6 +99,13 @@ function SignupForm({ setLogForm, logForm }) {
         })
         return;
       }
+      if (!email.includes('@')) {
+        toast.error('Invalid email address', {
+          position: 'top-center',
+          autoClose: 3000,
+        });
+        return;
+      }
 
       const userRegister = {
         email: email,
@@ -137,11 +144,11 @@ function SignupForm({ setLogForm, logForm }) {
 
   return (
     <div className='h-full w-full flex justify-center items-center'>
-      <div className='w-[58%]'>
+      <div className='w-[50%]'>
         <h4 className="font-medium text-[36px] mb-[7px]">Sign Up</h4>
         <p className="text-custom-text">Elevate Your Brand with Premium Printing Solutions</p>
         <GoogleAuthButton><span className="font-medium">Sign up with Google</span></GoogleAuthButton>
-        <div className="flex w-full justify-center items-center mt-[15px]">
+        <div className="flex w-full justify-center items-center mt-[15px] mb-[15px]">
           <hr className="border-t border-grayLight w-[57px]" />
           <span className="mx-[10px] text-custom-text-grey">or</span>
           <hr className="border-t border-grayLight w-[57px]" />
@@ -164,11 +171,11 @@ function SignupForm({ setLogForm, logForm }) {
           <input type={passwordToggle ? 'password' : 'text'} name="password" placeholder="Confirm Password" className="text-black focus:outline-none px-[12px] w-full" onChange={(e) => setPassword2(e.target.value)} value={password2} />
           <button onClick={() => { setpasswordToggle(!passwordToggle) }}>{passwordToggle ? <BsFillEyeSlashFill /> : <BsFillEyeFill />}</button>
         </div>
-        <p className="text-[14px] text-custom-text-grey mb-[15px]">By signing up, I agree to the <Link className="decoration-solid underline" to="/termsandconditions">Terms of Service</Link> and <Link className="decoration-solid underline" to="/privacypolicy">Privacy Policy</Link>.</p>
+        <p className="text-[12px] text-custom-text-grey mb-[15px]">By signing up, I agree to the <Link className="decoration-solid underline" to="/termsandconditions">Terms of Service</Link> and <Link className="decoration-solid underline" to="/privacypolicy">Privacy Policy</Link>.</p>
         <div onClick={handleRegister}>
           <AuthComponentBtn>Sign up</AuthComponentBtn>
         </div>
-        <p className="font-medium text-[14px] text-custom-text-grey mt-[5px]">Have an account? <button onClick={() => { setLogForm(!logForm) }} className="text-custom-text">Login now!</button></p>
+        <p className="font-medium text-[14px] text-custom-text-grey mt-[15px]">Have an account? <button onClick={() => { setLogForm(!logForm) }} className="text-custom-text">Login now!</button></p>
       </div>
       <ToastContainer position="top-center" autoClose={5000} hideProgressBar={false} />
     </div>

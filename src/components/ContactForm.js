@@ -14,47 +14,50 @@ function ContactForm() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
-  const [message,seMessage] = useState('');
-  const Navigate = useNavigate()
- 
+  const [message, setMessage] = useState('');
+  const Navigate = useNavigate();
 
   const handleSubmit = async () => {
+    if (!firstName || !lastName || !email || !subject || !message) {
+      alert('All fields are required');
+      return;
+    }
+    
+  if (!email.includes('@')) {
+    alert('Invalid email address');
+    return;
+  }
+
     try {
       const formData = {
         first_name: firstName,
         last_name: lastName,
         email: email,
         subject: subject,
-        message:message
-     
+        message: message,
       };
-      console.log(formData);
+
+
 
       const response = await ContactApi(formData);
-      console.log('this is contact response', response);
 
+      alert('Message sent successfully');
+      Navigate('/');
 
-
-        // toast.success('Message Sent Successfully', {
-        //     position: 'top-center',
-        //     autoClose: 3000,
-        //   });
-
-        alert("message sent successfully")
-        Navigate("/");
-        if(response.data){
-            setEmail("");
-            setFirstName("");
-            setLastName("");
-            setSubject("")
-        }
+      if (response.data) {
+        setEmail('');
+        setFirstName('');
+        setLastName('');
+        setSubject('');
+        setMessage('');
+      }
     } catch (error) {
       console.error('Error:', error);
 
-      toast.error('Message not sent Successfully', {
+      toast.error('Message not sent successfully', {
         position: 'top-center',
         autoClose: 3000,
-      })
+      });
     }
   };
 
@@ -62,65 +65,58 @@ function ContactForm() {
     <div className="p-[24px] border rounded-xl border-blue w-full">
       <h1 className="text-4xl font-medium">Contact us</h1>
       <div className="flex">
-      <div    onChange={(e) => setFirstName(e.target.value)}>
-        <InputField
-          name="first_name"
-          label="First Name"
-          type="text"
-          placeholder="John"
-          require
-          value={firstName}
-       
-        />
+        <div onChange={(e) => setFirstName(e.target.value)}>
+          <InputField
+            name="first_name"
+            label="First Name"
+            type="text"
+            placeholder="John"
+            required
+            value={firstName}
+          />
         </div>
-        <div  onChange={(e) => setLastName(e.target.value)}>
-        <InputField
-          name="last_name"
-          label="Last Name"
-          type="text"
-          placeholder="Doe"
-          require
-          value={lastName}
-         
-        />
+        <div onChange={(e) => setLastName(e.target.value)}>
+          <InputField
+            name="last_name"
+            label="Last Name"
+            type="text"
+            placeholder="Doe"
+            required
+            value={lastName}
+          />
         </div>
       </div>
       <div className="flex">
-      <div  onChange={(e) => setEmail(e.target.value)}>
-        <InputField
-          name="email"
-          label="Email"
-          type="email"
-          placeholder="John@abc.com"
-          require
-          value={email}
-         
-        />
+        <div onChange={(e) => setEmail(e.target.value)}>
+          <InputField
+            name="email"
+            label="Email"
+            type="email"
+            placeholder="John@abc.com"
+            required
+            value={email}
+          />
         </div>
-        <div   onChange={(e) => setSubject(e.target.value)}>
-         <InputField
-          name="subject"
-          label="Subject"
-          type="text"
-          placeholder="Subject"
-          require
-          value={subject}
-        
-        />
+        <div onChange={(e) => setSubject(e.target.value)}>
+          <InputField
+            name="subject"
+            label="Subject"
+            type="text"
+            placeholder="Subject"
+            required
+            value={subject}
+          />
         </div>
-
       </div>
       <p className="text-[16px] text-custom-text-darkGrey mt-[24px] mb-[10px]">Message</p>
       <textarea
         rows="5"
         placeholder="Any message for us.."
         className="border border-grayLight py-[6px] px-[12px] rounded focus:outline-none mb-[24px] w-full"
-        onChange={(e) => seMessage(e.target.value)}
+        onChange={(e) => setMessage(e.target.value)}
       />
       <div onClick={handleSubmit}>
-        <CtnBtn
-          className="mt-[32px] py-[10px] px-[24px] bg-custom-bg-gray text-white rounded cursor-pointer"
-        >
+        <CtnBtn className="mt-[32px] py-[10px] w-[130px] px-[24px] bg-custom-bg-gray text-white rounded cursor-pointer">
           Send Email
         </CtnBtn>
       </div>
