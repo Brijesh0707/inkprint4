@@ -12,7 +12,7 @@ function About() {
         <div className="md:mx-[16px] mx-[80px] mb-24 text-custom-text-p">
 
             {/* For Navigation */}
-            <PageTopNavigation firstRouteLink="/" firstRouteName="Home" secondRouteName="All Products"/>
+            <PageTopNavigation firstRouteLink="/" firstRouteName="Home" secondRouteName="About Us"/>
 
             {/* First Paragraph */}
             <h2 className="md:text-[12px] text-[32px] mb-2">About Us</h2>

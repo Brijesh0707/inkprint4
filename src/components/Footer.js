@@ -4,6 +4,10 @@ import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import { TfiYoutube } from "react-icons/tfi";
 
 function Footer() {
+    const handleInstagramClick = () => {
+        // Redirect to Instagram
+        window.location.href = 'https://www.instagram.com/inkprintindia';
+      };
     return (
         <>
             <div className="pt-8 px-[60px] pb-[60px] block md:hidden">
@@ -271,10 +275,10 @@ function Footer() {
                         <h3 className="text-[20px] font-medium mb-[20px] text-black">
                             Follow Us On
                         </h3>
-                        <ul className="flex text-[25px]">
-                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><Link to="/"><AiFillInstagram /></Link></ol>
-                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><Link to="/"><AiFillFacebook /></Link></ol>
-                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><Link to="/"><TfiYoutube /></Link></ol>
+                        <ul className="flex text-[25px]"> 
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><Link to="https://www.instagram.com/inkprintindia/"><AiFillInstagram /></Link></ol>
+                            <Link to=""></Link><ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><Link to="https://www.facebook.com/inkprintdotin/"><AiFillFacebook /></Link></ol>
+                            <Link to="https://youtu.be/hgJnnMcSQNA?si=kyrlysE-zI5G34T8"><ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><TfiYoutube /></ol></Link>
                         </ul>
                     </div>
                     <div className="w-1/5">
@@ -562,6 +566,7 @@ function Footer() {
                     <div className="mt-[30px] flex">
                         <div>
                             <img src={Logo} alt="logo" className="w-[78px]"/>
+                            
                             <p className="text-custom-text-grey text-[8px] w-10/12">
                             Copyright &copy; 2023 <span className="text-custom-text-green">Inkprint</span>, All Rights Reserved.
                         </p>
@@ -570,14 +575,16 @@ function Footer() {
                             <h4 className="text-[14px] font-semibold text-custom-text-darkGrey mb-[10px]">Follow Us On</h4>
                             <div>
                             <ul className="flex text-[16px] text-custom-text-grey">
-                            <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><Link to="/"><AiFillInstagram /></Link></ol>
+                            
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]" onClick={handleInstagramClick}><AiFillInstagram /></ol>
+                            
                             <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><Link to="/"><AiFillFacebook /></Link></ol>
-                            <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><Link to="/"><TfiYoutube /></Link></ol>
-                            <h1>HELLO kese ho</h1>
+                           <Link to="https://youtu.be/hgJnnMcSQNA?si=kyrlysE-zI5G34T8"><ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><TfiYoutube /></ol></Link>
+                            
                         </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </>
