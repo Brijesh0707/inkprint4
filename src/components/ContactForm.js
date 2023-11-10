@@ -17,18 +17,52 @@ function ContactForm() {
   const [message, setMessage] = useState('');
   const Navigate = useNavigate();
 
-  const handleSubmit = async () => {
-    if (!firstName || !lastName || !email || !subject || !message) {
-      alert('All fields are required');
-      return;
-    }
-    
-  if (!email.includes('@')) {
-    alert('Invalid email address');
-    return;
-  }
+  const validateInput = (value) => {
+    const regex = /^[A-Za-z\s]+$/;
+    return value.includes('@') || value.includes('.') || value === '';
+  };
 
+  const handleFirstNameChange = (e) => {
+    e.persist();
+    const value = e.target.value;
+  
+      setFirstName(value);
+   
+  };
+  
+  const handleLastNameChange = (e) => {
+    e.persist();
+    const value = e.target.value;
+   
+      setLastName(value);
+   
+  };
+  
+
+  const hasNumbersOrSymbols = (value) => {
+    const specialCharacters = '0123456789!@#$%^&*(),.?":{}|<>';
+    return [...value].some(char => specialCharacters.includes(char));
+  };
+
+  const handleSubmit = async () => {
     try {
+  
+      if (!email.includes('@') || !email.includes('.')) {
+        alert('Invalid email address');
+        return;
+      }
+     
+      if (hasNumbersOrSymbols(firstName) || hasNumbersOrSymbols(lastName)) {
+        alert('First name and last name should only contain letters and spaces');
+        return;
+      }
+
+      if (firstName ==="" || lastName === "" || email === "" || subject === "" || message === "") {
+        alert('All fields are required');
+        return;
+      }
+  
+
       const formData = {
         first_name: firstName,
         last_name: lastName,
@@ -36,14 +70,14 @@ function ContactForm() {
         subject: subject,
         message: message,
       };
-
-
-
+  
+      console.log(formData)
+    
       const response = await ContactApi(formData);
-
+  
       alert('Message sent successfully');
-      Navigate('/');
-
+      // Navigate('/');
+  
       if (response.data) {
         setEmail('');
         setFirstName('');
@@ -53,19 +87,20 @@ function ContactForm() {
       }
     } catch (error) {
       console.error('Error:', error);
-
+  
       toast.error('Message not sent successfully', {
         position: 'top-center',
         autoClose: 3000,
       });
     }
   };
+  
 
   return (
     <div className="p-[24px] border rounded-xl border-blue w-full">
       <h1 className="text-4xl font-medium">Contact us</h1>
       <div className="flex">
-        <div onChange={(e) => setFirstName(e.target.value)}>
+        <div onChange={handleFirstNameChange} className='mr-[75px]'>
           <InputField
             name="first_name"
             label="First Name"
@@ -75,7 +110,7 @@ function ContactForm() {
             value={firstName}
           />
         </div>
-        <div onChange={(e) => setLastName(e.target.value)}>
+        <div onChange={handleLastNameChange}>
           <InputField
             name="last_name"
             label="Last Name"
@@ -87,7 +122,7 @@ function ContactForm() {
         </div>
       </div>
       <div className="flex">
-        <div onChange={(e) => setEmail(e.target.value)}>
+        <div onChange={(e) => setEmail(e.target.value)} className='mr-[75px]'>
           <InputField
             name="email"
             label="Email"
@@ -116,7 +151,7 @@ function ContactForm() {
         onChange={(e) => setMessage(e.target.value)}
       />
       <div onClick={handleSubmit}>
-        <CtnBtn className="mt-[32px] py-[10px] w-[130px] px-[24px] bg-custom-bg-gray text-white rounded cursor-pointer">
+        <CtnBtn className="mt-[34px] w-[130px] h-[38px] pl-6 pt-[6px] font-semibold bg-custom-bg-gray text-white rounded cursor-pointer">
           Send Email
         </CtnBtn>
       </div>

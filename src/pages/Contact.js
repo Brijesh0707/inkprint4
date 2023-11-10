@@ -9,7 +9,7 @@ function Contact() {
     window.scrollTo(0, 0);
   }, [])
   return (
-    <div className="mx-[80px] mb-24">
+    <div className="mx-[80px] mb-24 w-[92%]">
 
       {/* For Navigation */}
       <PageTopNavigation firstRouteLink="/" firstRouteName="Home" secondRouteName="Contact Us" />
