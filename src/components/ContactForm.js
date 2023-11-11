@@ -97,47 +97,51 @@ function ContactForm() {
   
 
   return (
-    <div className="p-[24px] border rounded-xl border-blue w-full">
-      <h1 className="text-4xl font-medium">Contact us</h1>
-      <div className="flex">
-        <div onChange={handleFirstNameChange} className='mr-[75px]'>
+    <div className="p-[24px] border rounded-xl border-blue w-[56vw]">
+      <h1 className="text-[32px] font-medium">Contact us</h1>
+      <div className="flex w-full">
+        <div onChange={handleFirstNameChange} className='w-full'>
           <InputField
             name="first_name"
             label="First Name"
             type="text"
             placeholder="John"
+            width="95%"
             required
             value={firstName}
           />
         </div>
-        <div onChange={handleLastNameChange}>
+        <div onChange={handleLastNameChange} className='w-full'>
           <InputField
             name="last_name"
             label="Last Name"
             type="text"
             placeholder="Doe"
+            width="100%"
             required
             value={lastName}
           />
         </div>
       </div>
-      <div className="flex">
-        <div onChange={(e) => setEmail(e.target.value)} className='mr-[75px]'>
+      <div className="flex w-full">
+        <div onChange={(e) => setEmail(e.target.value)} className='w-full'>
           <InputField
             name="email"
             label="Email"
             type="email"
             placeholder="John@abc.com"
+            width="95%"
             required
             value={email}
           />
         </div>
-        <div onChange={(e) => setSubject(e.target.value)}>
+        <div onChange={(e) => setSubject(e.target.value)} className='w-full'>
           <InputField
             name="subject"
             label="Subject"
             type="text"
             placeholder="Subject"
+            width="100%"
             required
             value={subject}
           />

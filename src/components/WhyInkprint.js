@@ -9,49 +9,49 @@ import Img4 from '../assets/img/reason_4.png'
 const WhyInkprint = () => {
   return (
    <>
-   <div className='w-[100%] mb-[100px]'>
-     <div className='why-inkprint flex ml-10'>
-        <h1 className='text-2xl pt-[46px]'>Why Inkprint?</h1>
-        <img src={Line} className='w-[420px] h-[2px] mt-[63px] ml-2 md:w-[150px] mb-10' alt='line' />
+   <div className='py-[100px] px-[60px]'>
+     <div className='why-inkprint flex items-center mb-[64px]'>
+        <h1 className='text-[28px] mr-2'>Why Inkprint?</h1>
+        <hr className='border-t-2 border-green w-[583px]'/>
      </div>
-     <div className='flex justify-evenly'>
+     <div className='flex justify-between'>
         <div className='reason_1 w-[250px]'>
-            <div className='reason_image'>
+            <div className='reason_image mb-[17px]'>
                 <img src={Img1} className="w-[50px] h-[50px]" />
             </div>
             <div className='main_reason'>
                 <h1 className="text-[#6D6E70] text-2xl">Custom Packaging Solutions</h1>
-                <p className="text-[13px] text-[#ADADAD]">Tailored to Your Brand, Budget, and Product Requirements</p>
+                <p className="text-[#ADADAD]">Tailored to Your Brand, Budget, and Product Requirements</p>
             </div>
         </div>
         <div className='reason_2 w-[250px]'>
-            <div className='reason_image '>
+            <div className='reason_image mb-[17px]'>
             <img src={Img2} className="w-[50px] h-[50px]"/>
 
             </div>
             <div className='main_reason'>
                 <h1 className="text-[#6D6E70] text-2xl">Reliable Packaging Services</h1>
-                <p className="text-[13px] text-[#ADADAD]">Consistent Quality and On-Time <br/>Delivery</p>
+                <p className="text-[#ADADAD]">Consistent Quality and On-Time <br/>Delivery</p>
             </div>
         </div>
         <div className='reason_3 w-[250px]'>
-            <div className='reason_image '>
+            <div className='reason_image mb-[17px]'>
             <img src={Img3} className="w-[50px] h-[50px]"/>
 
             </div>
             <div className='main_reason'>
                 <h1 className="text-[#6D6E70] text-2xl">Exceptional Customer Support</h1>
-                <p className="text-[13px] text-[#ADADAD]">Dedicated to Providing Impeccable Customer Experience</p>
+                <p className="text-[#ADADAD]">Dedicated to Providing Impeccable Customer Experience</p>
             </div>
         </div>
         <div className='reason_4 w-[250px]'>
-            <div className='reason_image '>
+            <div className='reason_image mb-[17px]'>
             <img src={Img4} className="w-[50px] h-[50px]" />
 
             </div>
             <div className='main_reason'>
                 <h1 className="text-[#6D6E70] text-2xl">Affordable Packaging Solutions</h1>
-                <p className="text-[13px] text-[#ADADAD]">Get the Best Value for Your Packaging Investment</p>
+                <p className="text-[#ADADAD]">Get the Best Value for Your Packaging Investment</p>
             </div>
         </div>
      </div>

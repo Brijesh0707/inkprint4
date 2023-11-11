@@ -24,7 +24,8 @@ module.exports = {
       },
       backgroundColor: {
         'custom-btn': '#00A6DB',
-        'custm-bg-product': '#F9F5ED',
+        'custom-btn-dark' : '#0084ae',
+        'custom-bg-product': '#F9F5ED',
         'custom-bg-card': '#FFFFFF',
         'custom-bg-sproduct': 'rgba(255, 255, 255, 0.5)',
         'custom-bg-gray': '#ADADAD'
@@ -47,6 +48,9 @@ module.exports = {
       colors: {
         'shadowGreen': '#AFC40C',
       },
+      fontFamily: {
+        inter: ['Inter']
+      }
     },
   },
   plugins: [],

@@ -12,17 +12,17 @@ const ProductCard = (props) => {
 
   return (
     <>
-      <div className='card bg-custom-bg-card rounded-[8px] mb-8 w-[300px]'>
-        <div className='card-text'>
-          {/* <h1 className='pl-8 pt-3 text-custom-text text-lg font-medium'>Box Packaging (6)</h1> */}
-        </div>
-        <div className='card-img'>
-          <img src={props.image} className='mt-2' alt="Product" />
+      <div className='card bg-custom-bg-card rounded-[8px] mb-8 h-[725px]'>
+        {/* <div className='card-text'>
+          <h1 className='pl-8 pt-3 text-custom-text text-lg font-medium'>Box Packaging (6)</h1>
+        </div> */}
+        <div className='card-img relative w-[100%] h-[45%] overflow-hidden mt-[4rem]'>
+          <img src={props.image} className='absolute mt-2 hover:scale-[1.5] transition duration-300' alt="Product" />
         </div>
         <div className='Slider mt-10 mb-3'>
           <div className='slider_products flex mt-4 mb-10 relative w-[82%] ml-7'>
             <Swiper
-              slidesPerView={2}
+              slidesPerView={2.5}
               spaceBetween={30}
               navigation={{
                 prevEl: prevRef.current,

@@ -16,18 +16,14 @@ import { Pagination, Navigation } from "swiper/modules";
 const FindYourFit = () => {
   return (
     <>
-      <div className="w-[100%]">
-        <div className="find_your_fit flex">
-          <h1 className="text-2xl pt-[46px] pl-10">Find Your Fit</h1>
-          <img
-            src={Line}
-            className="w-[420px] h-[2px] mt-[63px] ml-2 md:w-[150px] mb-10"
-            alt="line"
-          />
+      <div className="mx-[60px] mt-[100px] relative">
+        <div className="find_your_fit flex items-center">
+          <h1 className="text-[32px]">Find Your Fit</h1>
+          <hr className="border-t-2 border-green w-[583px] ml-2"/>
         </div>
-        <div className="w-[90%] ml-[60px]">
+        <div className="mt-[40px]">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={2.5}
             spaceBetween={30}
             pagination={false}
             navigation={{
@@ -41,10 +37,10 @@ const FindYourFit = () => {
             <SwiperSlide>
               <div className="main_contain relative">
                 <img src={Card} className="relative" alt="Gift Box" />
-                <div className="absolute left-10 top-5 z-10">
-                  <h1 className="text-lg text-[#444444]">Customize Gift Boxes</h1>
-                  <h2 className="text-[14px] pr-[42px] text-[#6D6E70]">Starting from ₹1234</h2>
-                  <button className="w-[80px] h-[30px] bg-[#00A6DB] text-[12px] mt-5 mr-[88px] text-white rounded-[4px] font-medium">
+                <div className="absolute left-[40px] top-[50px] z-10 flex flex-col">
+                  <h1 className="text-[24px] text-custom-text-p mb-[16px]">Customize Gift Boxes</h1>
+                  <h2 className="text-[20px] text-custom-text-darkGrey text-left mb-[36px]">Starting from ₹1234</h2>
+                  <button className="bg-custom-btn text-[16px] text-white rounded-[4px] font-medium px-[24px] py-[10px] w-fit hover:bg-custom-btn-dark transition duration-300">
                     Shop Now
                   </button>
                 </div>
@@ -53,10 +49,10 @@ const FindYourFit = () => {
             <SwiperSlide>
               <div className="main_contain relative">
                 <img src={Card} className="relative" alt="Gift Box" />
-                <div className="absolute left-10 top-5 z-10">
-                  <h1 className="text-lg text-[#444444]">Customize Gift Boxes</h1>
-                  <h2 className="text-[14px] pr-[42px] text-[#6D6E70]">Starting from ₹1234</h2>
-                  <button className="w-[80px] h-[30px] bg-[#00A6DB] text-[12px] mt-5 mr-[88px] text-white rounded-[4px] font-medium">
+                <div className="absolute left-[40px] top-[50px] z-10 flex flex-col">
+                  <h1 className="text-[24px] text-custom-text-p mb-[16px]">Customize Gift Boxes</h1>
+                  <h2 className="text-[20px] text-custom-text-darkGrey text-left mb-[36px]">Starting from ₹1234</h2>
+                  <button className="bg-custom-btn text-[16px] text-white rounded-[4px] font-medium px-[24px] py-[10px] w-fit hover:bg-custom-btn-dark transition duration-300">
                     Shop Now
                   </button>
                 </div>
@@ -65,10 +61,10 @@ const FindYourFit = () => {
             <SwiperSlide>
               <div className="main_contain relative">
                 <img src={Card} className="relative" alt="Gift Box" />
-                <div className="absolute left-10 top-5 z-10">
-                  <h1 className="text-lg text-[#444444]">Customize Gift Boxes</h1>
-                  <h2 className="text-[14px] pr-[42px] text-[#6D6E70]">Starting from ₹1234</h2>
-                  <button className="w-[80px] h-[30px] bg-[#00A6DB] text-[12px] mt-5 mr-[88px] text-white rounded-[4px] font-medium">
+                <div className="absolute left-[40px] top-[50px] z-10 flex flex-col">
+                  <h1 className="text-[24px] text-custom-text-p mb-[16px]">Customize Gift Boxes</h1>
+                  <h2 className="text-[20px] text-custom-text-darkGrey text-left mb-[36px]">Starting from ₹1234</h2>
+                  <button className="bg-custom-btn text-[16px] text-white rounded-[4px] font-medium px-[24px] py-[10px] w-fit hover:bg-custom-btn-dark transition duration-300">
                     Shop Now
                   </button>
                 </div>
@@ -77,10 +73,10 @@ const FindYourFit = () => {
             <SwiperSlide>
               <div className="main_contain relative">
                 <img src={Card} className="relative" alt="Gift Box" />
-                <div className="absolute left-10 top-5 z-10">
-                  <h1 className="text-lg text-[#444444]">Customize Gift Boxes</h1>
-                  <h2 className="text-[14px] pr-[42px] text-[#6D6E70]">Starting from ₹1234</h2>
-                  <button className="w-[80px] h-[30px] bg-[#00A6DB] text-[12px] mt-5 mr-[88px] text-white rounded-[4px] font-medium">
+                <div className="absolute left-[40px] top-[50px] z-10 flex flex-col">
+                  <h1 className="text-[24px] text-custom-text-p mb-[16px]">Customize Gift Boxes</h1>
+                  <h2 className="text-[20px] text-custom-text-darkGrey text-left mb-[36px]">Starting from ₹1234</h2>
+                  <button className="bg-custom-btn text-[16px] text-white rounded-[4px] font-medium px-[24px] py-[10px] w-fit hover:bg-custom-btn-dark transition duration-300">
                     Shop Now
                   </button>
                 </div>
@@ -90,8 +86,8 @@ const FindYourFit = () => {
           </Swiper>
         
         </div>
-        <img src={btnprev} className="absolute w-9 z-10 swiper_button_prev top-[4000px] left-2 cursor-pointer " />
-        <img src={btnnext} className="w-9 ml-10  swiper_button_next top-[3998px] right-2 absolute z-10 cursor-pointer" />
+        <img src={btnprev} className="absolute top-[50%] left-0 w-9 z-10 swiper_button_prev cursor-pointer"/>
+        <img src={btnnext} className="absolute top-[50%] right-0 w-9 swiper_button_next z-10 cursor-pointer"/>
       </div>
       
     </>

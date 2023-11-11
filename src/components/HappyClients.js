@@ -19,19 +19,15 @@ import { Pagination, Navigation } from "swiper/modules";
 
 const HappyClients = () => {
   return (
-    <div className='w-[90%] mt-10 mb-10 ml-10'>
-      <div className='find_your_fit flex'>
-        <h1 className='text-2xl pt-[46px] pl-10'>Happy Clients</h1>
-        <img
-          src={Line}
-          className='w-[400px] h-1 mt-[65px] ml-2 md:w-150 mb-10'
-          alt='line'
-        />
+    <div className='mt-[100px] mx-[60px]'>
+      <div className='find_your_fit flex items-center'>
+        <h1 className='text-[32px]'>Happy Clients</h1>
+        <hr className='border-t-2 border-green ml-2 w-[583px]'/>
       </div>
 
-      <div className='w-90 ml-5 relative mt-8'>
+      <div className='relative mt-[40px]'>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={2.5}
           spaceBetween={30}
          pagination={false}
           navigation={{
@@ -44,125 +40,36 @@ const HappyClients = () => {
         >
          
           
-         <SwiperSlide>
-            <div className='happy_wrapper  pt-10 pb-10'>
-              <div className='main relative'>
-                <img
-                  src={Profile}
-                  className='w-[48px]  absolute left-[145px] top-[-20px] h-[47px] z-10 '
-                  alt='Profile'
-                />
-                <div className='happy_clients'>
-                  <img
-                    src={Border}
-                    className='w-400 h-[185px] relative'
-                    alt='Border'
-                  />
-                  <div className='happy_text absolute z-10 w-[300px] h-[180px] left-2 h-180 top-1'>
-                    <p className='text-center text-[13px] pt-9 pl-5'>
-                      At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life. At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.
-                    </p>
-                   
-                    <p className='ml-[30px] person_name mt-2 text-[6D6E70]'>Saumya Garg</p>
-                  </div>
-                </div>
-              </div>
+         <SwiperSlide className='pt-[40px]'>
+            <div className='relative flex flex-col items-center h-[244px] px-[31px]'>
+              <img src={Border} alt="client box's border" className='absolute top-0 left-0 w-full h-full z-[-1]'/>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] translate-y-[-35px]'/>
+              <p className='text-[16px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
+              <p className='text-custom-text-darkGrey mt-[34px]'>Saumya Garg</p>
             </div>
-          </SwiperSlide><SwiperSlide>
-            <div className='happy_wrapper  pt-10 pb-10'>
-              <div className='main relative'>
-                <img
-                  src={Profile}
-                  className='w-[48px]  absolute left-[145px] top-[-20px] h-[47px] z-10 '
-                  alt='Profile'
-                />
-                <div className='happy_clients'>
-                  <img
-                    src={Border}
-                    className='w-400 h-[185px] relative'
-                    alt='Border'
-                  />
-                  <div className='happy_text absolute z-10 w-[300px] h-[180px] left-2 h-180 top-1'>
-                    <p className='text-center text-[13px] pt-9 pl-5'>
-                      At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life. At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.
-                    </p>
-                   
-                    <p className='ml-[30px] person_name mt-2 text-[6D6E70]'>Saumya Garg</p>
-                  </div>
-                </div>
-              </div>
+          </SwiperSlide>
+         <SwiperSlide className='pt-[40px]'>
+            <div className='relative flex flex-col items-center h-[244px] px-[31px]'>
+              <img src={Border} alt="client box's border" className='absolute top-0 left-0 w-full h-full z-[-1]'/>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] translate-y-[-35px]'/>
+              <p className='text-[16px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
+              <p className='text-custom-text-darkGrey mt-[34px]'>Saumya Garg</p>
             </div>
-          </SwiperSlide><SwiperSlide>
-            <div className='happy_wrapper  pt-10 pb-10'>
-              <div className='main relative'>
-                <img
-                  src={Profile}
-                  className='w-[48px]  absolute left-[145px] top-[-20px] h-[47px] z-10 '
-                  alt='Profile'
-                />
-                <div className='happy_clients'>
-                  <img
-                    src={Border}
-                    className='w-400 h-[185px] relative'
-                    alt='Border'
-                  />
-                  <div className='happy_text absolute z-10 w-[300px] h-[180px] left-2 h-180 top-1'>
-                    <p className='text-center text-[13px] pt-9 pl-5'>
-                      At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life. At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.
-                    </p>
-                   
-                    <p className='ml-[30px] person_name mt-2 text-[6D6E70]'>Saumya Garg</p>
-                  </div>
-                </div>
-              </div>
+          </SwiperSlide>
+         <SwiperSlide className='pt-[40px]'>
+            <div className='relative flex flex-col items-center h-[244px] px-[31px]'>
+              <img src={Border} alt="client box's border" className='absolute top-0 left-0 w-full h-full z-[-1]'/>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] translate-y-[-35px]'/>
+              <p className='text-[16px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
+              <p className='text-custom-text-darkGrey mt-[34px]'>Saumya Garg</p>
             </div>
-          </SwiperSlide><SwiperSlide>
-            <div className='happy_wrapper  pt-10 pb-10'>
-              <div className='main relative'>
-                <img
-                  src={Profile}
-                  className='w-[48px]  absolute left-[145px] top-[-20px] h-[47px] z-10 '
-                  alt='Profile'
-                />
-                <div className='happy_clients'>
-                  <img
-                    src={Border}
-                    className='w-400 h-[185px] relative'
-                    alt='Border'
-                  />
-                  <div className='happy_text absolute z-10 w-[300px] h-[180px] left-2 h-180 top-1'>
-                    <p className='text-center text-[13px] pt-9 pl-5'>
-                      At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life. At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.
-                    </p>
-                   
-                    <p className='ml-[30px] person_name mt-2 text-[6D6E70]'>Saumya Garg</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide><SwiperSlide>
-            <div className='happy_wrapper  pt-10 pb-10'>
-              <div className='main relative'>
-                <img
-                  src={Profile}
-                  className='w-[48px]  absolute left-[145px] top-[-20px] h-[47px] z-10 '
-                  alt='Profile'
-                />
-                <div className='happy_clients'>
-                  <img
-                    src={Border}
-                    className='w-400 h-[185px] relative'
-                    alt='Border'
-                  />
-                  <div className='happy_text absolute z-10 w-[300px] h-[180px] left-2 h-180 top-1'>
-                    <p className='text-center text-[13px] pt-9 pl-5'>
-                      At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life. At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.
-                    </p>
-                   
-                    <p className='ml-[30px] person_name mt-2 text-[6D6E70]'>Saumya Garg</p>
-                  </div>
-                </div>
-              </div>
+          </SwiperSlide>
+         <SwiperSlide className='pt-[40px]'>
+            <div className='relative flex flex-col items-center h-[244px] px-[31px]'>
+              <img src={Border} alt="client box's border" className='absolute top-0 left-0 w-full h-full z-[-1]'/>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] translate-y-[-35px]'/>
+              <p className='text-[16px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
+              <p className='text-custom-text-darkGrey mt-[34px]'>Saumya Garg</p>
             </div>
           </SwiperSlide>
           {/* Add more SwiperSlides as needed */}

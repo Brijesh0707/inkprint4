@@ -76,71 +76,71 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="shadow-[0_2px_2px_0px_rgba(175,196,12,0.08)] px-[20px] py-[15px] block md:hidden">
+      <div className="shadow-[0_2px_2px_0px_rgba(175,196,12,0.08)] px-[20px] pt-[15px] pb-[7px] block md:hidden">
         <div className="w-full">
-          <div className="flex justify-between">
+          <div className="flex justify-between px-[2rem]">
             <Link to="/">
-              <div className="logo ml-10">
+              <div className="logo">
                 <img src={Logo} alt="Logo" className="w-[150px] h-[60px]" />
               </div>
             </Link>
 
-            <div className="flex items-center w-2/3">
-              <div className="flex items-center py-[10px] h-[37px] px-[24px] border rounded-full w-[500px] border-grayMid">
+            <div className="flex items-center justify-between w-2/3">
+              <div className="flex items-center py-[10px] h-[37px] px-[24px] border rounded-full max-w-[431px] w-[431px] border-grayMid">
                 <input
                   placeholder="Search Products..."
                   className="w-full focus:outline-none"
                 />
                 <FiSearch className="text-2xl text-custom-text-grey cursor-pointer" />
               </div>
-              <div
-                className={`text-custom-text flex items-center mx-[25px] ml-[40px]   w-[22vw] transition-all ${
-                  bulk ? "hidden" : ""
-                } font-semibold`}
-                onMouseOver={() => setBulk(true)}
-              >
-                <BsTelephone className="mr-2" />
-                <span className="text-[14px]">Contact us for bulk order</span>
-              </div>
-              <div
-                className={`text-custom-text flex items-center mx-[40px] w-[215px] transition-all ${
-                  bulk ? "" : "hidden"
-                } font-semibold`}
-                onMouseLeave={() => setBulk(false)}
-              >
-                <BsTelephone className="mr-2" />
-                <span>
-                  <a href="tel:9772906080">+91 9772 9060 80</a>
-                </span>
-              </div>
-              {Token || RegToken ? (
-                <button className="border-blue text-[15px] mr-3 border-[1px] rounded-[4px] text-custom-text w-[180px] flex pl-3 pt-[8px] h-[40px] font-medium ">
-                  My Account{" "}
-                  <BsPerson className="border-blue w-4 h-4   mr-2 ml-2 mt-[3px]" />
-                </button>
-              ) : (
-                <button
-                  className="bg-custom-btn text-white pb-1 w-[115px] mr-4 h-[35px] rounded"
-                  onClick={handleLoginClick}
+              <div className="flex">
+                <div
+                  className={`text-custom-text flex justify-end items-center min-w-[260px] px-[20px] transition-all ${bulk ? "hidden" : ""
+                    } font-semibold`}
+                  onMouseOver={() => setBulk(true)}
                 >
-                  Log in
-                </button>
-              )}
-              <div className="text-custom-text-green font-semibold cursor-pointer">
-                <img src={Cart} className="w-9 h-7 mt-1 cursor-pointer"/>
+                  <BsTelephone className="mr-2" />
+                  <span>Contact us for bulk order</span>
+                </div>
+                <div
+                  className={`text-custom-text flex justify-end items-center min-w-[260px] px-[20px] transition-all ${bulk ? "" : "hidden"
+                    } font-semibold`}
+                  onMouseLeave={() => setBulk(false)}
+                >
+                  <BsTelephone className="mr-2" />
+                  <span>
+                    <a href="tel:9772906080">+91 9772 9060 80</a>
+                  </span>
+                </div>
+                {Token || RegToken ? (
+                  <button className="border-blue text-[15px] mr-3 border-[1px] rounded-[4px] text-custom-text w-[180px] flex pl-3 pt-[8px] h-[40px] font-medium ">
+                    My Account{" "}
+                    <BsPerson className="border-blue w-4 h-4   mr-2 ml-2 mt-[3px]" />
+                  </button>
+                ) : (
+                  <button
+                    className="bg-custom-btn hover:bg-custom-btn-dark text-white w-[95px] mr-4 h-[35px] rounded transition duration-300"
+                    onClick={handleLoginClick}
+                  >
+                    Log in
+                  </button>
+                )}
+                <div className="text-custom-text-green font-semibold cursor-pointer">
+                  <img src={Cart} className="w-9 h-7 mt-1 cursor-pointer object-contain" />
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="mx-[50px] my-[10px]">
           <ul className="flex w-full justify-between text-custom-navbarGrey font-medium">
-            <li className="border-r-2 px-[10px] py-[8px]">
-              <p className="px-[15px] py-[8px] border-b-2 pr-5 border-white hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
+            <li className="border-r-2 pl-[10px] py-[4px] my-[8px] pr-[3rem]">
+              <p className="px-[15px] pt-[4px] pb-[10px] border-b-2 pr-5 border-white hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
                 All Products
               </p>
             </li>
             <li className="px-[10px] py-[8px] text-center">
-              <p className="px-[15px] py-[10px] hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
+              <p className="px-[15px] py-[10px] border-b-2 border-white hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
                 Visiting Cards
               </p>
             </li>
@@ -187,11 +187,10 @@ const Navbar = () => {
                         onClick={() => {
                           a1 ? setA1(false) : setA1(true);
                         }}
-                        className={`${
-                          a1
+                        className={`${a1
                             ? "border-b-2 border-blue text-custom-text"
                             : "text-custom-text-darkGrey"
-                        } px-[12px] py-[8px] mb-[12px]`}
+                          } px-[12px] py-[8px] mb-[12px]`}
                       >
                         <Box
                           as="span"
@@ -217,11 +216,10 @@ const Navbar = () => {
                         onClick={() => {
                           a2 ? setA2(false) : setA2(true);
                         }}
-                        className={`${
-                          a2
+                        className={`${a2
                             ? "border-b-2 border-blue text-custom-text"
                             : "text-custom-text-darkGrey"
-                        } px-[12px] py-[8px] mb-[12px]`}
+                          } px-[12px] py-[8px] mb-[12px]`}
                       >
                         <Box
                           as="span"
@@ -247,11 +245,10 @@ const Navbar = () => {
                         onClick={() => {
                           a3 ? setA3(false) : setA3(true);
                         }}
-                        className={`${
-                          a3
+                        className={`${a3
                             ? "border-b-2 border-blue text-custom-text"
                             : "text-custom-text-darkGrey"
-                        } px-[12px] py-[8px] mb-[12px]`}
+                          } px-[12px] py-[8px] mb-[12px]`}
                       >
                         <Box
                           as="span"
@@ -277,11 +274,10 @@ const Navbar = () => {
                         onClick={() => {
                           a4 ? setA4(false) : setA4(true);
                         }}
-                        className={`${
-                          a4
+                        className={`${a4
                             ? "border-b-2 border-blue text-custom-text"
                             : "text-custom-text-darkGrey"
-                        } px-[12px] py-[8px] mb-[12px]`}
+                          } px-[12px] py-[8px] mb-[12px]`}
                       >
                         <Box
                           as="span"
@@ -417,11 +413,10 @@ const Navbar = () => {
                         onClick={() => {
                           a5 ? setA5(false) : setA5(true);
                         }}
-                        className={`${
-                          a5
+                        className={`${a5
                             ? "border-b-2 border-blue text-custom-text"
                             : "text-custom-text-darkGrey"
-                        } px-[12px] py-[8px] mb-[12px]`}
+                          } px-[12px] py-[8px] mb-[12px]`}
                       >
                         <Box
                           as="span"
@@ -447,11 +442,10 @@ const Navbar = () => {
                         onClick={() => {
                           a6 ? setA6(false) : setA6(true);
                         }}
-                        className={`${
-                          a6
+                        className={`${a6
                             ? "border-b-2 border-blue text-custom-text"
                             : "text-custom-text-darkGrey"
-                        } px-[12px] py-[8px] mb-[12px]`}
+                          } px-[12px] py-[8px] mb-[12px]`}
                       >
                         <Box
                           as="span"
