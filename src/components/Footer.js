@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Tooltip } from '@chakra-ui/react'
 import Logo from '../assets/img/Logo.png';
 import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import { TfiYoutube } from "react-icons/tfi";
@@ -276,9 +277,29 @@ function Footer() {
                             Follow Us On
                         </h3>
                         <ul className="flex text-[25px]"> 
-                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><Link to="https://www.instagram.com/inkprintindia/"><AiFillInstagram /></Link></ol>
-                            <Link to=""></Link><ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><Link to="https://www.facebook.com/inkprintdotin/"><AiFillFacebook /></Link></ol>
-                            <Link to="https://youtu.be/hgJnnMcSQNA?si=kyrlysE-zI5G34T8"><ol className="hover:text-custom-text-green transition duration-300 mr-[30px]"><TfiYoutube /></ol></Link>
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]">
+                                <Tooltip label="instagram" className="bg-black text-white text-[12px] px-[2px]">
+                                    <Link to="https://www.instagram.com/inkprintindia/">
+                                        <AiFillInstagram />
+                                    </Link>
+                                </Tooltip>
+                            </ol>
+
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]">
+                                <Tooltip label="facebook" className="bg-black text-white text-[12px] px-[2px]">
+                                    <Link to="https://www.facebook.com/inkprintdotin/">
+                                        <AiFillFacebook />
+                                    </Link>
+                                </Tooltip>
+                            </ol>
+
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]">
+                                <Tooltip label="youtube" className="bg-black text-white text-[12px] px-[2px]">
+                                    <Link to="https://youtu.be/hgJnnMcSQNA?si=kyrlysE-zI5G34T8">
+                                        <TfiYoutube />
+                                    </Link>
+                                </Tooltip>
+                            </ol>
                         </ul>
                     </div>
                     <div className="w-1/5">

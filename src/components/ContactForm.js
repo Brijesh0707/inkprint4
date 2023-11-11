@@ -97,10 +97,10 @@ function ContactForm() {
   
 
   return (
-    <div className="p-[24px] border rounded-xl border-blue w-full">
-      <h1 className="text-4xl font-medium">Contact us</h1>
-      <div className="flex">
-        <div onChange={handleFirstNameChange} className='mr-[75px]'>
+    <div className="p-[24px] border rounded-xl border-blue w-[56vw] md:w-full md:p-[12px] md:mb-[24px]">
+      <h1 className="text-[32px] md:text-[14px] font-medium">Contact us</h1>
+      <div className="flex w-full md:flex-col">
+        <div onChange={handleFirstNameChange} className='w-full'>
           <InputField
             name="first_name"
             label="First Name"
@@ -110,19 +110,20 @@ function ContactForm() {
             value={firstName}
           />
         </div>
-        <div onChange={handleLastNameChange}>
+        <div onChange={handleLastNameChange} className='w-full'>
           <InputField
             name="last_name"
             label="Last Name"
             type="text"
             placeholder="Doe"
+            width="100%"
             required
             value={lastName}
           />
         </div>
       </div>
-      <div className="flex">
-        <div onChange={(e) => setEmail(e.target.value)} className='mr-[75px]'>
+      <div className="flex w-full md:flex-col">
+        <div onChange={(e) => setEmail(e.target.value)} className='w-full'>
           <InputField
             name="email"
             label="Email"
@@ -132,26 +133,27 @@ function ContactForm() {
             value={email}
           />
         </div>
-        <div onChange={(e) => setSubject(e.target.value)}>
+        <div onChange={(e) => setSubject(e.target.value)} className='w-full'>
           <InputField
             name="subject"
             label="Subject"
             type="text"
             placeholder="Subject"
+            width="100%"
             required
             value={subject}
           />
         </div>
       </div>
-      <p className="text-[16px] text-custom-text-darkGrey mt-[24px] mb-[10px]">Message</p>
+      <p className="text-[16px] text-custom-text-darkGrey mt-[24px] mb-[10px] md:text-[10px] md:mt-[12px] md:mb-[7px]">Message<span className="text-red-500">*</span></p>
       <textarea
-        rows="5"
+        rows={window.innerWidth<500?"3":"5"}
         placeholder="Any message for us.."
-        className="border border-grayLight py-[6px] px-[12px] rounded focus:outline-none mb-[24px] w-full"
+        className="border border-grayLight py-[6px] px-[12px] rounded focus:outline-none mb-[24px] w-full md:mb-[16px]"
         onChange={(e) => setMessage(e.target.value)}
       />
       <div onClick={handleSubmit}>
-        <CtnBtn className="mt-[34px] w-[130px] h-[38px] pl-6 pt-[6px] font-semibold bg-custom-bg-gray text-white rounded cursor-pointer">
+        <CtnBtn className="mt-[34px] w-[130px] h-[38px] font-semibold bg-custom-bg-gray text-white rounded cursor-pointer md:mt-0 md:text-[12px] flex items-center justify-center">
           Send Email
         </CtnBtn>
       </div>

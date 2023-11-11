@@ -11,7 +11,7 @@ import TermsAndConditions from './pages/TermsAndConditions'
 
 const App = () => {
   return (
-    <>
+    <div className='font-inter'>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>} />
@@ -22,7 +22,7 @@ const App = () => {
         <Route path='/blogs' element={<Blogs/>} />
       </Routes>
       <Footer/>
-    </>
+    </div>
   )
 }
 

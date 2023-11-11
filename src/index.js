@@ -13,8 +13,8 @@ root.render(
   <React.StrictMode>
   <Provider store={store}>
     <BrowserRouter>
-      <GoogleOAuthProvider clientId="265363981714-go4mdbbsbk0pd92tqj2pvok1hjrghkvn.apps.googleusercontent.com">
-        <App />
+      <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
+        <App className="font-inter"/>
       </GoogleOAuthProvider>
     </BrowserRouter>
     </Provider>
