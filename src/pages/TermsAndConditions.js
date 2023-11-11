@@ -11,11 +11,11 @@ function TermsAndConditions() {
         window.scrollTo(0, 0);
     }, [])
     return (
-        <div className="md:mx-[16px] mx-[80px] mb-24 text-custom-text-p">
+        <div className="md:mx-[12px] mx-[60px] mb-24 text-custom-text-p">
 
             {/* For Navigation */}
             <PageTopNavigation firstRouteLink="/" firstRouteName="Home" secondRouteName="Terms &amp; conditions" />
-            <h1 className='pb-1 md:text[13px] text-[32px] text-black'>Terms & Conditions</h1>
+            <h1 className='md:text-[14px] text-[36px] text-custom-text-p font-medium'>Terms & Conditions</h1>
 
             {data?
                 data.map((item,index)=>(

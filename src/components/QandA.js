@@ -5,9 +5,10 @@ const QandA = (props) => {
    <>
     <div className='w-[100%]'>
 
-  <div className='mt-5'>
-  <h2 className="md:text-[12px] text-[20px] text-[#444444] mb-2 "> {props.title.includes(".") ? "" : props.title}</h2>
-            <p className="text-custom-text-p font-light md:text-[12px] text-lg">{props.subject}</p>
+  <div className='mt-[24px] md:mt-[12px]'>
+    {props.title.includes(".")?<></>:<h2 className="md:text-[12px] text-[18px] text-custom-text-p mb-[12px] md:mb-[8px]">{props.title}</h2>}
+  {/* <h2 className="md:text-[12px] text-[20px] text-custom-text-p mb-2 md:mb-[8px]"> {props.title.includes(".") ? "" : props.title}</h2> */}
+            <p className="text-custom-text-darkGrey leading-6 md:leading-4 font-light md:text-[12px] text-[18px]">{props.subject}</p>
     </div>
   </div>
    </>

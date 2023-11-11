@@ -9,7 +9,7 @@ import Img4 from '../assets/img/reason_4.png'
 const WhyInkprint = () => {
   return (
    <>
-   <div className='py-[100px] px-[60px]'>
+   <div className='py-[100px] px-[60px] hidden'>
      <div className='why-inkprint flex items-center mb-[64px]'>
         <h1 className='text-[28px] mr-2'>Why Inkprint?</h1>
         <hr className='border-t-2 border-green w-[583px]'/>

@@ -9,11 +9,11 @@ function Contact() {
     window.scrollTo(0, 0);
   }, [])
   return (
-    <div className="mx-[60px] mb-24 w-[92%]">
+    <div className="mx-[60px] mb-24 w-[92%] md:mx-[12px]">
 
       {/* For Navigation */}
       <PageTopNavigation firstRouteLink="/" firstRouteName="Home" secondRouteName="Contact Us" />
-      <div className="flex justify-between">
+      <div className="flex justify-between md:flex-col">
 
         {/* Contact us component*/}
         <ContactForm />

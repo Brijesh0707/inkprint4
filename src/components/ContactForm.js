@@ -97,16 +97,15 @@ function ContactForm() {
   
 
   return (
-    <div className="p-[24px] border rounded-xl border-blue w-[56vw]">
-      <h1 className="text-[32px] font-medium">Contact us</h1>
-      <div className="flex w-full">
+    <div className="p-[24px] border rounded-xl border-blue w-[56vw] md:w-full md:p-[12px] md:mb-[24px]">
+      <h1 className="text-[32px] md:text-[14px] font-medium">Contact us</h1>
+      <div className="flex w-full md:flex-col">
         <div onChange={handleFirstNameChange} className='w-full'>
           <InputField
             name="first_name"
             label="First Name"
             type="text"
             placeholder="John"
-            width="95%"
             required
             value={firstName}
           />
@@ -123,14 +122,13 @@ function ContactForm() {
           />
         </div>
       </div>
-      <div className="flex w-full">
+      <div className="flex w-full md:flex-col">
         <div onChange={(e) => setEmail(e.target.value)} className='w-full'>
           <InputField
             name="email"
             label="Email"
             type="email"
             placeholder="John@abc.com"
-            width="95%"
             required
             value={email}
           />
@@ -147,15 +145,15 @@ function ContactForm() {
           />
         </div>
       </div>
-      <p className="text-[16px] text-custom-text-darkGrey mt-[24px] mb-[10px]">Message</p>
+      <p className="text-[16px] text-custom-text-darkGrey mt-[24px] mb-[10px] md:text-[10px] md:mt-[12px] md:mb-[7px]">Message<span className="text-red-500">*</span></p>
       <textarea
-        rows="5"
+        rows={window.innerWidth<500?"3":"5"}
         placeholder="Any message for us.."
-        className="border border-grayLight py-[6px] px-[12px] rounded focus:outline-none mb-[24px] w-full"
+        className="border border-grayLight py-[6px] px-[12px] rounded focus:outline-none mb-[24px] w-full md:mb-[16px]"
         onChange={(e) => setMessage(e.target.value)}
       />
       <div onClick={handleSubmit}>
-        <CtnBtn className="mt-[34px] w-[130px] h-[38px] pl-6 pt-[6px] font-semibold bg-custom-bg-gray text-white rounded cursor-pointer">
+        <CtnBtn className="mt-[34px] w-[130px] h-[38px] font-semibold bg-custom-bg-gray text-white rounded cursor-pointer md:mt-0 md:text-[12px] flex items-center justify-center">
           Send Email
         </CtnBtn>
       </div>

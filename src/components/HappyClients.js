@@ -19,15 +19,15 @@ import { Pagination, Navigation } from "swiper/modules";
 
 const HappyClients = () => {
   return (
-    <div className='mt-[100px] mx-[60px]'>
+    <div className='mt-[100px] md:mt-[24px] mx-[60px] md:mx-[12px] md:mb-[40px]'>
       <div className='find_your_fit flex items-center'>
-        <h1 className='text-[32px]'>Happy Clients</h1>
-        <hr className='border-t-2 border-green ml-2 w-[583px]'/>
+        <h1 className='text-[32px] md:text-[14px]'>Happy Clients</h1>
+        <hr className='border-t-2 border-green ml-2 w-[583px] md:w-[120px]'/>
       </div>
 
-      <div className='relative mt-[40px]'>
+      <div className='relative mt-[40px] md:mt-[12px] md:mt-[32px]'>
         <Swiper
-          slidesPerView={2.5}
+          slidesPerView={window.innerWidth<500 ? 1.2: 2.5}
           spaceBetween={30}
          pagination={false}
           navigation={{
@@ -41,35 +41,35 @@ const HappyClients = () => {
          
           
          <SwiperSlide className='pt-[40px]'>
-            <div className='relative flex flex-col items-center h-[244px] px-[31px]'>
+            <div className='relative flex flex-col items-center h-[244px] md:h-[213px] px-[31px]'>
               <img src={Border} alt="client box's border" className='absolute top-0 left-0 w-full h-full z-[-1]'/>
-              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] translate-y-[-35px]'/>
-              <p className='text-[16px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
-              <p className='text-custom-text-darkGrey mt-[34px]'>Saumya Garg</p>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px]'/>
+              <p className='text-[16px] md:text-[12px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
+              <p className='text-custom-text-darkGrey mt-[34px] md:text-[12px] md:mt-[20px]'>Saumya Garg</p>
             </div>
           </SwiperSlide>
          <SwiperSlide className='pt-[40px]'>
-            <div className='relative flex flex-col items-center h-[244px] px-[31px]'>
+            <div className='relative flex flex-col items-center h-[244px] md:h-[213px] px-[31px]'>
               <img src={Border} alt="client box's border" className='absolute top-0 left-0 w-full h-full z-[-1]'/>
-              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] translate-y-[-35px]'/>
-              <p className='text-[16px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
-              <p className='text-custom-text-darkGrey mt-[34px]'>Saumya Garg</p>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px]'/>
+              <p className='text-[16px] md:text-[12px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
+              <p className='text-custom-text-darkGrey mt-[34px] md:text-[12px] md:mt-[20px]'>Saumya Garg</p>
             </div>
           </SwiperSlide>
          <SwiperSlide className='pt-[40px]'>
-            <div className='relative flex flex-col items-center h-[244px] px-[31px]'>
+            <div className='relative flex flex-col items-center h-[244px] md:h-[213px] px-[31px]'>
               <img src={Border} alt="client box's border" className='absolute top-0 left-0 w-full h-full z-[-1]'/>
-              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] translate-y-[-35px]'/>
-              <p className='text-[16px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
-              <p className='text-custom-text-darkGrey mt-[34px]'>Saumya Garg</p>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px]'/>
+              <p className='text-[16px] md:text-[12px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
+              <p className='text-custom-text-darkGrey mt-[34px] md:text-[12px] md:mt-[20px]'>Saumya Garg</p>
             </div>
           </SwiperSlide>
          <SwiperSlide className='pt-[40px]'>
-            <div className='relative flex flex-col items-center h-[244px] px-[31px]'>
+            <div className='relative flex flex-col items-center h-[244px] md:h-[213px] px-[31px]'>
               <img src={Border} alt="client box's border" className='absolute top-0 left-0 w-full h-full z-[-1]'/>
-              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] translate-y-[-35px]'/>
-              <p className='text-[16px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
-              <p className='text-custom-text-darkGrey mt-[34px]'>Saumya Garg</p>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px]'/>
+              <p className='text-[16px] md:text-[12px]'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
+              <p className='text-custom-text-darkGrey mt-[34px] md:text-[12px] md:mt-[20px]'>Saumya Garg</p>
             </div>
           </SwiperSlide>
           {/* Add more SwiperSlides as needed */}

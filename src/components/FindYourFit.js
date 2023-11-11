@@ -16,14 +16,14 @@ import { Pagination, Navigation } from "swiper/modules";
 const FindYourFit = () => {
   return (
     <>
-      <div className="mx-[60px] mt-[100px] relative">
+      <div className="mx-[60px] md:mx-[12px] mt-[100px] md:mt-[24px] relative">
         <div className="find_your_fit flex items-center">
-          <h1 className="text-[32px]">Find Your Fit</h1>
-          <hr className="border-t-2 border-green w-[583px] ml-2"/>
+          <h1 className="text-[32px] md:text-[14px]">Find Your Fit</h1>
+          <hr className="border-t-2 border-green w-[583px] md:w-[120px] ml-2"/>
         </div>
-        <div className="mt-[40px]">
+        <div className="mt-[40px] md:mt-[12px]">
           <Swiper
-            slidesPerView={2.5}
+            slidesPerView={window.innerWidth<500 ? 1.2: 2.5}
             spaceBetween={30}
             pagination={false}
             navigation={{
@@ -37,10 +37,10 @@ const FindYourFit = () => {
             <SwiperSlide>
               <div className="main_contain relative">
                 <img src={Card} className="relative" alt="Gift Box" />
-                <div className="absolute left-[40px] top-[50px] z-10 flex flex-col">
-                  <h1 className="text-[24px] text-custom-text-p mb-[16px]">Customize Gift Boxes</h1>
-                  <h2 className="text-[20px] text-custom-text-darkGrey text-left mb-[36px]">Starting from ₹1234</h2>
-                  <button className="bg-custom-btn text-[16px] text-white rounded-[4px] font-medium px-[24px] py-[10px] w-fit hover:bg-custom-btn-dark transition duration-300">
+                <div className="absolute left-[40px] top-[50px] md:left-[10px] md:top-[10px] z-10 flex flex-col">
+                  <h1 className="text-[24px] md:text-[14px] text-custom-text-p mb-[16px] md:mb-[8px]">Customize Gift Boxes</h1>
+                  <h2 className="text-[20px] md:text-[12px] text-custom-text-darkGrey text-left mb-[36px] md:mb-[24px]">Starting from ₹1234</h2>
+                  <button className="bg-custom-btn text-[16px] md:text-[12px] text-white rounded-[4px] font-medium px-[24px] py-[10px] md:p-[6px] w-fit hover:bg-custom-btn-dark transition duration-300">
                     Shop Now
                   </button>
                 </div>
@@ -49,10 +49,10 @@ const FindYourFit = () => {
             <SwiperSlide>
               <div className="main_contain relative">
                 <img src={Card} className="relative" alt="Gift Box" />
-                <div className="absolute left-[40px] top-[50px] z-10 flex flex-col">
-                  <h1 className="text-[24px] text-custom-text-p mb-[16px]">Customize Gift Boxes</h1>
-                  <h2 className="text-[20px] text-custom-text-darkGrey text-left mb-[36px]">Starting from ₹1234</h2>
-                  <button className="bg-custom-btn text-[16px] text-white rounded-[4px] font-medium px-[24px] py-[10px] w-fit hover:bg-custom-btn-dark transition duration-300">
+                <div className="absolute left-[40px] top-[50px] md:left-[10px] md:top-[10px] z-10 flex flex-col">
+                  <h1 className="text-[24px] md:text-[14px] text-custom-text-p mb-[16px] md:mb-[8px]">Customize Gift Boxes</h1>
+                  <h2 className="text-[20px] md:text-[12px] text-custom-text-darkGrey text-left mb-[36px] md:mb-[24px]">Starting from ₹1234</h2>
+                  <button className="bg-custom-btn text-[16px] md:text-[12px] text-white rounded-[4px] font-medium px-[24px] py-[10px] md:p-[6px] w-fit hover:bg-custom-btn-dark transition duration-300">
                     Shop Now
                   </button>
                 </div>
@@ -61,10 +61,10 @@ const FindYourFit = () => {
             <SwiperSlide>
               <div className="main_contain relative">
                 <img src={Card} className="relative" alt="Gift Box" />
-                <div className="absolute left-[40px] top-[50px] z-10 flex flex-col">
-                  <h1 className="text-[24px] text-custom-text-p mb-[16px]">Customize Gift Boxes</h1>
-                  <h2 className="text-[20px] text-custom-text-darkGrey text-left mb-[36px]">Starting from ₹1234</h2>
-                  <button className="bg-custom-btn text-[16px] text-white rounded-[4px] font-medium px-[24px] py-[10px] w-fit hover:bg-custom-btn-dark transition duration-300">
+                <div className="absolute left-[40px] top-[50px] md:left-[10px] md:top-[10px] z-10 flex flex-col">
+                  <h1 className="text-[24px] md:text-[14px] text-custom-text-p mb-[16px] md:mb-[8px]">Customize Gift Boxes</h1>
+                  <h2 className="text-[20px] md:text-[12px] text-custom-text-darkGrey text-left mb-[36px] md:mb-[24px]">Starting from ₹1234</h2>
+                  <button className="bg-custom-btn text-[16px] md:text-[12px] text-white rounded-[4px] font-medium px-[24px] py-[10px] md:p-[6px] w-fit hover:bg-custom-btn-dark transition duration-300">
                     Shop Now
                   </button>
                 </div>
@@ -73,10 +73,10 @@ const FindYourFit = () => {
             <SwiperSlide>
               <div className="main_contain relative">
                 <img src={Card} className="relative" alt="Gift Box" />
-                <div className="absolute left-[40px] top-[50px] z-10 flex flex-col">
-                  <h1 className="text-[24px] text-custom-text-p mb-[16px]">Customize Gift Boxes</h1>
-                  <h2 className="text-[20px] text-custom-text-darkGrey text-left mb-[36px]">Starting from ₹1234</h2>
-                  <button className="bg-custom-btn text-[16px] text-white rounded-[4px] font-medium px-[24px] py-[10px] w-fit hover:bg-custom-btn-dark transition duration-300">
+                <div className="absolute left-[40px] top-[50px] md:left-[10px] md:top-[10px] z-10 flex flex-col">
+                  <h1 className="text-[24px] md:text-[14px] text-custom-text-p mb-[16px] md:mb-[8px]">Customize Gift Boxes</h1>
+                  <h2 className="text-[20px] md:text-[12px] text-custom-text-darkGrey text-left mb-[36px] md:mb-[24px]">Starting from ₹1234</h2>
+                  <button className="bg-custom-btn text-[16px] md:text-[12px] text-white rounded-[4px] font-medium px-[24px] py-[10px] md:p-[6px] w-fit hover:bg-custom-btn-dark transition duration-300">
                     Shop Now
                   </button>
                 </div>
