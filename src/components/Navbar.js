@@ -47,6 +47,8 @@ import {
 import { RxTextAlignJustify } from "react-icons/rx";
 import { Link } from "react-router-dom";
 
+import { BsArrowRight } from "react-icons/bs";
+
 const Navbar = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [bulk, setBulk] = useState(false);
@@ -86,7 +88,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="shadow-[0_2px_2px_0px_rgba(175,196,12,0.08)] px-[20px] pt-[15px] pb-[7px] block md:hidden">
+      <div className="shadow-[0_2px_2px_0px_rgba(175,196,12,0.08)] px-[20px] pt-[15px] pb-[7px] fixed top-0 left-0 bg-white z-[100] w-full block md:hidden">
         <div className="w-full">
           <div className="flex justify-between px-[2rem]">
             <Link to="/">
@@ -96,7 +98,7 @@ const Navbar = () => {
             </Link>
 
             <div className="flex items-center justify-between w-2/3">
-              <div className="flex items-center py-[10px] h-[37px] px-[24px] border rounded-full max-w-[431px] w-[431px] border-grayMid">
+              <div className="flex items-center py-[10px] h-[37px] px-[24px] border rounded-full max-w-[33vw] w-[33vw] border-grayMid">
                 <input
                   placeholder="Search Products..."
                   className="w-full focus:outline-none"
@@ -129,7 +131,7 @@ const Navbar = () => {
                   </button>
                 ) : (
                   <button
-                    className="bg-custom-btn hover:bg-custom-btn-dark text-white w-[95px] mr-4 h-[35px] rounded transition duration-300"
+                    className="bg-custom-btn hover:bg-custom-btn-dark text-white w-[95px] mr-[12px] h-[39px] rounded transition duration-300"
                     onClick={handleLoginClick}
                   >
                     Log in
@@ -177,14 +179,14 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="hidden md:block mx-[12px]">
+      <div className="hidden md:block mx-[12px] sticky top-0 left-0 bg-white z-[60]">
         <div className="flex justify-between items-center">
           <div className="flex">
             <img src={Logo} alt="Logo" className="w-[128px]" />
               <button onClick={() => onOpen()}><RxTextAlignJustify className="text-custom-text-darkGrey"/></button>
               <Drawer onClose={onClose} isOpen={isOpen} size="full" placement="left">
-                <DrawerOverlay className="bg-white">
-                  <DrawerContent className="px-[12px]">
+                <DrawerOverlay className="bg-white z-[100] overflow-y-auto">
+                  <DrawerContent className="px-[12px] overflow-y-auto">
                     <div className="flex items-center justify-between">
                       <img src={Logo} alt="Logo" className="w-[128px]" />
                       <DrawerCloseButton className="text-[13px]" />
@@ -554,6 +556,8 @@ const Navbar = () => {
                   </AccordionPanel>
                 </AccordionItem>
               </Accordion>
+              <hr className="border-[#D9D9D9] border-t-2"/>
+              {Token || RegToken?(<div>Hello</div>):(<div className="flex justify-between items-center text-[12px] px-[12px] py-[20px] mb-[12px] text-custom-text-darkGrey font-semibold"><button onClick={()=>{handleLoginClick();onClose();}}>Login</button><BsArrowRight/></div>)}
               <div className="relative px-[12px] py-[18px] h-[10rem] mt-[100px]">
                 <img
                   src={navImg}

@@ -16,20 +16,20 @@ function About() {
 
             {/* First Paragraph */}
             <h2 className="md:text-[14px] text-[32px] text-custom-text-p font-medium">About Us</h2>
-            <p className="text-custom-text-darkGrey font-light md:text-[12px] text-[18px] mt-[16px] leading-6">
+            <p className="text-custom-text-darkGrey md:text-[12px] text-[18px] mt-[16px] leading-6">
                 InkPrint, a division of Turtle Media Pvt. Ltd., is a New Delhi-based commercial printing and packaging powerhouse with a global footprint. Our expertise lies in crafting packaging solutions that seamlessly merge aesthetics and functionality, serving clients across all seven continents. We are driven by innovation, investing in cutting-edge technology and design principles to redefine packaging as an art form and a potent brand expression tool. At InkPrint, we envision a world where packaging elevates brand stories, and we're dedicated to making that vision a reality through excellence, creativity, and sustainability.
             </p>
 
             {/* Second Paragraph */}
             <h4 className="font-medium mt-[22px] mb-[12px] md:text-[12px] text-[18px] md:mb-[8px] md:mt-[12px]">Our Commitment: Quality, Precision, Excellence - Our Promise to You</h4>
-            <p className="text-custom-text-darkGrey font-light md:text-[12px] text-[18px] mt-[16px] leading-6">
+            <p className="text-custom-text-darkGrey md:text-[12px] text-[18px] mt-[16px] leading-6">
                 At InkPrint, our unwavering commitment is centered on delivering unparalleled quality, exacting precision, and unbridled excellence to our valued clients. We consider each project not merely as a task but as a canvas on which we paint our dedication to perfection. From the moment you entrust us with your printing and packaging needs, our promise is to uphold the highest standards in every aspect of our service. We understand that quality extends beyond the tangible product; it encompasses the entire experience. Thus, we take pride in ensuring that your journey with us is marked by unwavering attention, timely deliveries, and a relentless pursuit of your utmost satisfaction. Our commitment goes beyond the ink and paper; it's a commitment to elevate your brand, foster lasting partnerships, and exceed your expectations in every endeavor.
             </p>
 
 
             {/* Third Paragraph */}
             <h4 className="font-medium mt-[22px] mb-[12px] md:text-[12px] text-[18px] md:mb-[8px] md:mt-[12px]">Award-Winning Excellence: Recognized for Innovation - Silver Award Winner</h4>
-            <p className="text-custom-text-darkGrey font-light md:text-[12px] text-[18px] mt-[16px] leading-6">
+            <p className="text-custom-text-darkGrey md:text-[12px] text-[18px] mt-[16px] leading-6">
                 Our dedication to innovation and excellence has not only set us apart but has also earned us prestigious recognition. Achieving the remarkable feat of winning the Silver Award in the esteemed National IDMA (Indian Digital Media Awards) in 2013, specifically in the "Website-Corporate" category, serves as a testament to our commitment to pushing the boundaries of creativity and technology in the realm of digital media and corporate online presence. This accolade continues to inspire us, driving us to consistently deliver cutting-edge solutions and elevate our standards of excellence for the benefit of our valued clients.
                 At InkPrint, we take pride in our commitment to quality assurance. Our stringent process begins with meticulous pre-flight checks, where we scrutinize every detail of your project to ensure perfection. We leave nothing to chance, employing cutting-edge technology to guarantee that your print job meets the highest standards of quality and accuracy. With us, you can trust that your final product will be a flawless representation of your vision.
             </p>

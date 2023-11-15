@@ -149,11 +149,11 @@ function ContactForm() {
       <textarea
         rows={window.innerWidth<500?"3":"5"}
         placeholder="Any message for us.."
-        className="border border-grayLight py-[6px] px-[12px] rounded focus:outline-none mb-[24px] w-full md:mb-[16px]"
+        className="border border-grayLight py-[6px] px-[12px] rounded focus:outline-none w-full md:mb-[16px]"
         onChange={(e) => setMessage(e.target.value)}
       />
       <div onClick={handleSubmit}>
-        <CtnBtn className="mt-[34px] w-[130px] h-[38px] font-semibold bg-custom-bg-gray text-white rounded cursor-pointer md:mt-0 md:text-[12px] flex items-center justify-center">
+        <CtnBtn className="mt-[32px] w-[130px] h-[38px] font-semibold bg-custom-bg-gray text-white rounded cursor-pointer md:mt-0 md:text-[12px] flex items-center justify-center">
           Send Email
         </CtnBtn>
       </div>

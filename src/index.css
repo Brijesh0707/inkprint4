@@ -66,3 +66,7 @@ input[type=password]::-ms-clear
     margin-left: 1px;
   }
 }
+
+.chakra-slide::-webkit-scrollbar {
+  display: none;
+}

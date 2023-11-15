@@ -135,8 +135,8 @@ function Login({ setShowLogin }) {
   };
   return (
     <>
-    <div className="fixed top-0 left-0 w-screen h-screen bg-black z-10 opacity-50" onClick={handleCloseModal}/>
-    <Modal isLogin logForm={logForm} setLogForm={setLogForm}/>
+    <div className="fixed top-0 left-0 w-screen h-screen bg-black z-[101] opacity-50" onClick={handleCloseModal}/>
+    <Modal isLogin logForm={logForm} setLogForm={setLogForm} handleCloseModal={handleCloseModal}/>
     </>
   )
 }
