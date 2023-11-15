@@ -73,13 +73,13 @@ const Home = () => {
 
   return (
     <>
-      <div className='hero1 w-[100%]'>
+      <div className='hero1 w-[100%] mt-[228px] md:mt-0'>
         <div className='flex justify-between mx-[60px] md:mx-[12px] md:block md:flex-col md:items-center mt-[76px]'>
           <div className='hidden md:block w-full'>
             <img src={BannerImage} className='min-w-full'/>
           </div>
           <div className='hero-text w-[50%] md:w-full'>
-            <h1 className='text-[36px] font-medium leading-[52px] text-custom-text-p ll:text-xl md:mt-[24px] md:text-[16px]'>
+            <h1 className='text-[36px] font-medium leading-[52px] md:leading-[24px] text-custom-text-p ll:text-xl md:mt-[24px] md:text-[16px]'>
               Elevate Your Brand with InkPrint: Unleash the Power of 
               <span className='text-custom-text-hero'> Exceptional Packaging Solutions and Design Expertise.</span>
             </h1>
