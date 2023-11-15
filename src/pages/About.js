@@ -36,13 +36,13 @@ function About() {
 
             {/* Fourth Paragraph */}
             <h4 className="font-medium mt-[22px] mb-[12px] md:text-[12px] text-[18px] md:mb-[8px] md:mt-[12px]">Elevating Your Packaging Vision</h4>
-            <p className="text-custom-text-darkGrey font-light md:text-[12px] text-[18px] mt-[16px] leading-6">
+            <p className="text-custom-text-darkGrey  md:text-[12px] text-[18px] mt-[16px] leading-6">
                 When you choose InkPrint, you're partnering with experts who excel in bringing your unique packaging vision to life. Our extensive range of packaging solutions caters to all your needs, whether you're looking for innovative packaging designs or robust packaging materials. Our team of specialists possesses the skill and knowledge to transform your creative packaging ideas into tangible, high-quality solutions that capture the essence of your brand. We specialize in producing eye-catching packaging materials that set your products apart on the market.
             </p>
 
             {/* Fifth Paragraph */}
             <h4 className="ffont-medium mt-[22px] mb-[12px] md:text-[12px] text-[18px] md:mb-[8px] md:mt-[12px]">Why Choose Us: Your Packaging Partner of Choice</h4>
-            <p className="text-custom-text-darkGrey font-light md:text-[12px] text-[18px] mt-[16px] leading-6">
+            <p className="text-custom-text-darkGrey  md:text-[12px] text-[18px] mt-[16px] leading-6">
                 InkPrint stands out as your packaging partner of choice for several compelling reasons. Our unwavering commitment to packaging excellence includes offering a wide array of customizable options to meet your specific packaging needs. We provide versatile business packaging solutions, ensuring that your packaging materials align perfectly with your branding and objectives. Our reliability is unmatched, and we take pride in delivering exceptional customer service throughout your packaging journey. Plus, our cost-effective solutions and flexible payment options make high-quality packaging accessible to businesses of all sizes. Choose InkPrint as your trusted partner to elevate your packaging game.
             </p>
 
@@ -51,19 +51,19 @@ function About() {
 
             {/* Seventh Paragraph */}
             <h4 className="font-medium mt-[22px] mb-[12px] md:text-[12px] text-[18px] md:mb-[8px] md:mt-[12px]">Customization and Consultation: Tailored Solutions for Your Unique Needs</h4>
-            <p className="text-custom-text-darkGrey font-light md:text-[12px] text-[18px] mt-[16px] leading-6">
+            <p className="text-custom-text-darkGrey  md:text-[12px] text-[18px] mt-[16px] leading-6">
                 Every business is unique, and we recognize that. InkPrint offers personalized packages and expert consultations to align our services with your specific requirements. Our dedicated team collaborates closely with you to ensure that your printing solutions are tailored to suit your business preferences, goals, and budget
             </p>
 
             {/* Eigth Paragraph */}
             <h4 className="font-medium mt-[22px] mb-[12px] md:text-[12px] text-[18px] md:mb-[8px] md:mt-[12px]">Get Started Today: Empowering Your Print Journey</h4>
-            <p className="text-custom-text-darkGrey font-light md:text-[12px] text-[18px] mt-[16px] leading-6">
+            <p className="text-custom-text-darkGrey  md:text-[12px] text-[18px] mt-[16px] leading-6">
                 The journey to exceptional printing and packaging starts here. InkPrint empowers you to transform your ideas into reality. Reach out to us today to embark on a print journey that combines creativity, innovation, and unwavering commitment to quality. Let's work together to make your vision come to life.
             </p>
 
             {/* Ninth Paragraph */}
             <h4 className="font-medium mt-[22px] mb-[12px] md:text-[12px] text-[18px] md:mb-[8px] md:mt-[12px]">Contact Us</h4>
-            <p className="text-custom-text-darkGrey font-light md:text-[12px] text-[18px] mt-[16px] leading-6">
+            <p className="text-custom-text-darkGrey  md:text-[12px] text-[18px] mt-[16px] leading-6">
                 Ready to start your printing and packaging journey with InkPrint? Our team is here to assist you every step of the way. Get in touch with us for inquiries, consultations, or to place your orders. We're just a message or call away!<br/>
                 Phone: [Insert Phone Number]<br/>
                 Email: [Insert Email Address]<br/>
