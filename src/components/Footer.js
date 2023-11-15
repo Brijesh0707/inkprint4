@@ -11,12 +11,12 @@ function Footer() {
       };
     return (
         <>
-            <div className="pt-8 px-[60px] pb-[60px] block md:hidden">
+            <div className="pt-8 px-[15px] pb-[60px] block md:hidden text-[14px]">
                 <h3 className="text-[20px] font-medium mb-[20px]">
                     Our Products
                 </h3>
                 <div className="flex justify-between lg:justify-around text-[14px]">
-                    <ul >
+                    <ul>
                         <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
                             <Link to="/">Monocarton Box Packaging</Link>
                         </ol>
@@ -228,7 +228,7 @@ function Footer() {
                       <img src={Logo} alt="inkprint logo" />
                       </Link>
                         <p>
-                            Copyright &copy; 2023 <span className="text-custom-text-green">Inkprint</span>, All Rights Reserved.
+                            Copyright &copy; 2023 <span className="text-custom-text-green">Inkprint</span>,<br/> All Rights Reserved.
                         </p>
                     </div>
                     <div className="w-1/5">
@@ -310,7 +310,7 @@ function Footer() {
                             Turtle Media Pvt. Ltd., 9 DSIDC Sheds, IInd Floor, Okhla Industrial Area Phase I,
                             New Delhi - 110020, India
                         </p>
-                        <p className="py-[8px]">
+                        <p className="py-[10px]">
                             <span className="font-medium">
                                 Phone:
                             </span>

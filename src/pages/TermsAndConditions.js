@@ -15,7 +15,7 @@ function TermsAndConditions() {
 
             {/* For Navigation */}
             <PageTopNavigation firstRouteLink="/" firstRouteName="Home" secondRouteName="Terms &amp; conditions" />
-            <h1 className='md:text-[14px] text-[36px] text-custom-text-p font-medium'>Terms & Conditions</h1>
+            <h1 className='md:text-[14px] text-[36px] text-custom-text-p font-medium leading-none'>Terms & Conditions</h1>
 
             {data?
                 data.map((item,index)=>(

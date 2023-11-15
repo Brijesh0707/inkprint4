@@ -3,7 +3,7 @@
 function InputField({label, type, name, placeholder, require, width}) {
     return (
       <div className="mt-[24px] md:mt-[16px] w-full">
-          <p className="text-custom-text-darkGrey text-[16px] mb-[7px] font-light md:text-[10px]">
+          <p className="text-custom-text-darkGrey text-[16px] mb-[7px] md:text-[10px]">
               {label}
                <span className="text-red-500">*</span>
           </p>

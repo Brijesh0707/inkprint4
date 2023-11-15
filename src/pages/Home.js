@@ -78,8 +78,8 @@ const Home = () => {
           <div className='hidden md:block w-full'>
             <img src={BannerImage} className='min-w-full'/>
           </div>
-          <div className='hero-text'>
-            <h1 className='text-[36px] text-custom-text-p ll:text-xl md:mt-[24px] md:text-[16px]'>
+          <div className='hero-text w-[50%] md:w-full'>
+            <h1 className='text-[36px] font-medium leading-[52px] text-custom-text-p ll:text-xl md:mt-[24px] md:text-[16px]'>
               Elevate Your Brand with InkPrint: Unleash the Power of 
               <span className='text-custom-text-hero'> Exceptional Packaging Solutions and Design Expertise.</span>
             </h1>
@@ -94,7 +94,7 @@ const Home = () => {
             </div>
           </div>
           <div className='banner_image w-[50%]'>
-            <img src={BannerImage} className='md:hidden w-[691px] h-[618px] lg:w-[400px] lg:h-[400px] ' />
+            <img src={BannerImage} className='md:hidden' />
           </div>
         </div>
       </div>
