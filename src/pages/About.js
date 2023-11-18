@@ -9,6 +9,7 @@ function About() {
     }, [])
 
     return (
+       
         <div className="md:mx-[12px] mx-[60px] mb-24 text-custom-text-p">
 
             {/* For Navigation */}
