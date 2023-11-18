@@ -56,6 +56,11 @@ input[type=password]::-ms-clear
   padding-top: 10px;
 }
 
+.partner_image {
+  filter: grayscale(100%);
+
+}
+
 @media (max-width:425px) {
   .banner_image img{
     width: 50vh;
