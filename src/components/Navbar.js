@@ -144,35 +144,45 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="mx-[50px] my-[10px]">
-          <ul className="flex w-full justify-between text-custom-navbarGrey font-medium">
-            <li className="border-r-2 pl-[10px] py-[4px] my-[8px] pr-[3rem]">
-              <p className="px-[15px] pt-[4px] pb-[10px] border-b-2 pr-5 border-white hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
+        <div className="mx-[px] my-[10px]">
+          <ul className="flex w-[100%] justify-between text-custom-navbarGrey font-medium">
+            <li className="border-r-2 pl-[10px] my-[8px] pr-[1rem]">
+              <p className="px-[1px] w-[130px]  pt-[20px] pb-[10px] border-b-2  border-white hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
                 All Products
               </p>
             </li>
-            <li className="px-[10px] py-[8px] text-center">
-              <p className="px-[15px] py-[10px] border-b-2 border-white hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
+            <li className="px-[1px] py-[8px] text-center">
+              <p className="px-[15px] w-[140px] pt-[23px] py-[10px] border-b-2 border-white hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
                 Visiting Cards
               </p>
             </li>
             <li className="px-[10px] py-[8px]">
-              <p className="px-[15px] py-[10px] hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
+              <p className=" w-[168px] mt-[23px] pb-3   hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
                 Business Essentials
               </p>
             </li>
-            <li className="px-[10px] py-[8px]">
-              <p className="px-[15px] py-[10px] hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
+            <li className=" py-[8px]">
+              <p className=" mt-[23px] w-[168px] pb-3 hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
                 Packaging Printing
               </p>
             </li>
-            <li className="px-[10px] py-[8px]">
-              <p className="px-[15px] py-[10px] hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
+            <li className=" py-[8px]">
+              <p className="w-[175px] mt-[23px] pb-3 pl-4 hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
                 Marketing essentials
               </p>
             </li>
             <li className="px-[10px] py-[8px]">
-              <p className="px-[15px] py-[10px] hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
+              <p className="w-[166px] mt-[23px] pb-3 pl-4 hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
+                Display Product
+              </p>
+            </li>
+            <li className=" py-[8px]">
+              <p className="w-[166px] mt-[23px] pb-3 hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
+                Display Product
+              </p>
+            </li>
+            <li className="px-[10px] py-[8px]">
+              <p className="px-[15px] py-[10px] pb-3 hover:border-b-2 hover:border-blue hover:text-custom-text cursor-pointer transition duration-300 text-center">
                 Display Product
               </p>
             </li>

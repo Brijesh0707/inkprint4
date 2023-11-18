@@ -32,9 +32,9 @@ module.exports = {
       },
       textColor: {
         'custom-text': '#00A6DB',
-        'custom-text-hero': '#AFC40C',
+        'custom-text-hero': '#00A6DB',
         'custom-text-p': '#444444',
-        'custom-text-grey': '#ADADAD',
+        'custom-text-grey': '#6D6E70',
         'custom-text-darkGrey': '#6D6E70',
         'custom-text-green': '#A7C539',
         'custom-navbarGrey': '#777777'

@@ -91,8 +91,8 @@ const ProductCard = (props) => {
               </SwiperSlide>
             
             </Swiper>
-            <button ref={prevRef} className="prev-button absolute left-[-25px] top-[80px] z-40 "><img src={btnprev} className='w-6 h-6'/></button>
-            <button ref={nextRef} className="next-button absolute right-[-25px] top-[80px] z-40"><img src={btnnext} className='w-6 h-6'/></button>
+            <button ref={prevRef} className="prev-button absolute left-[-25px] top-[80px] z-40 text-white text-[1px]"><img src={btnprev} className='w-6 h-6'/>p</button>
+            <button ref={nextRef} className="next-button absolute right-[-25px] top-[80px] z-40 text-white text-[1px]"><img src={btnnext} className='w-6 h-6'/>n</button>
           </div>
         </div>
         <div className='card-detail mb-2 ml-3 flex justify-between'>
