@@ -97,7 +97,7 @@ function ContactForm() {
   
 
   return (
-    <div className="p-[24px] border rounded-xl border-blue w-[56vw] md:w-full md:p-[12px] md:mb-[24px]">
+    <div className="p-[24px] border rounded-xl h-[95vh] border-blue w-[56vw] md:w-full md:p-[12px] md:mb-[24px]">
       <h1 className="text-[32px] md:text-[14px] font-medium">Contact us</h1>
       <div className="flex w-full md:flex-col">
         <div onChange={handleFirstNameChange} className='w-full'>

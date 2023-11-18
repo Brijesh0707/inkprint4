@@ -295,7 +295,7 @@ function Footer() {
 
                             <ol className="hover:text-custom-text-green transition duration-300 mr-[30px]">
                                 <Tooltip label="youtube" className="bg-black text-white text-[12px] px-[2px]">
-                                    <Link to="https://youtu.be/hgJnnMcSQNA?si=kyrlysE-zI5G34T8">
+                                    <Link to="https://www.youtube.com/channel/UCeMSYFOa54p2ChOOUPlPjpA">
                                         <TfiYoutube />
                                     </Link>
                                 </Tooltip>
