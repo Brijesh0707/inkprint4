@@ -195,8 +195,8 @@ const Navbar = () => {
             <img src={Logo} alt="Logo" className="w-[128px]" />
               <button onClick={() => onOpen()}><RxTextAlignJustify className="text-custom-text-darkGrey"/></button>
               <Drawer onClose={onClose} isOpen={isOpen} size="full" placement="left">
-                <DrawerOverlay className="bg-white z-[100] overflow-y-auto">
-                  <DrawerContent className="px-[12px] overflow-y-auto">
+                <DrawerOverlay className="bg-white z-[100] overflow-y-auto w-[100vw]">
+                  <DrawerContent className="px-[12px] overflow-y-auto w-[100vw] h-fit">
                     <div className="flex items-center justify-between">
                       <img src={Logo} alt="Logo" className="w-[128px]" />
                       <DrawerCloseButton className="text-[13px]" />

@@ -4,7 +4,7 @@ const ProductListCard = ({image,text}) => {
    <>
    <div className="product card">
     <div className="image">
-        <img src={image} className="w-[230px] h-[250px] object-fit"/>
+        <img src={image} className="w-[230px] h-[250px] object-fit md:h-[150px]"/>
     </div>
     <div className="product_title text-left">
         <h1 className="text-[14px] pl-2">{text}</h1>
