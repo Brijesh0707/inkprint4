@@ -8,6 +8,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsAndConditions from './pages/TermsAndConditions'
+import BlogScreen from './blogs/BlogScreen'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/privacypolicy' element={<PrivacyPolicy/>} />
         <Route path='/termsandconditions' element={<TermsAndConditions/>} />
         <Route path='/blogs' element={<Blogs/>} />
+        <Route path='/blogs/individualBlog' element={<BlogScreen/>} />
       </Routes>
       <Footer/>
     </div>
