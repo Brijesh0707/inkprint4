@@ -23,6 +23,7 @@ import navProductLables from "../assets/img/navProductLabels.png";
 import navThankYouCard from "../assets/img/navThankYouCard.png";
 import navWrappingCard from "../assets/img/navWrappingCard.png";
 import Cart from '../assets/img/cart_icon.png'
+import  {Link,useNavigate } from "react-router-dom";
 
 import {
   Accordion,
@@ -45,7 +46,7 @@ import {
 } from '@chakra-ui/react';
 
 import { RxTextAlignJustify } from "react-icons/rx";
-import { Link } from "react-router-dom";
+
 
 import { BsArrowRight } from "react-icons/bs";
 
@@ -58,6 +59,7 @@ const Navbar = () => {
   const [a4, setA4] = useState(false);
   const [a5, setA5] = useState(false);
   const [a6, setA6] = useState(false);
+  const navigate = useNavigate()
   const modalRef = useRef();
   const Token = localStorage.getItem("token");
   const RegToken = localStorage.getItem("Register_token");
@@ -72,6 +74,10 @@ const Navbar = () => {
       setShowLogin(false);
     }
   };
+
+  const handlemyaccount = ()=>{
+    navigate("/myaccountDetail")
+  }
 
   useEffect(() => {
     document.addEventListener("mousedown", handleOutsideClick);
@@ -125,9 +131,9 @@ const Navbar = () => {
                   </span>
                 </div>
                 {Token || RegToken ? (
-                  <button className="border-blue text-[15px] mr-3 border-[1px] rounded-[4px] text-custom-text w-[180px] flex pl-3 pt-[8px] h-[40px] font-medium ">
+                  <button className="border-blue text-[15px] mr-3 border-[1px] rounded-[4px] text-custom-text w-[180px] flex pl-3 pt-[8px] h-[40px] font-medium " onClick={handlemyaccount}>
                     My Account{" "}
-                    <BsPerson className="border-blue w-4 h-4   mr-2 ml-2 mt-[3px]" />
+                    <BsPerson className="border-blue w-4 h-4    ml-4 mt-[3px]" />
                   </button>
                 ) : (
                   <button
@@ -137,9 +143,11 @@ const Navbar = () => {
                     Log in
                   </button>
                 )}
+                
                 <div className="text-custom-text-green font-semibold cursor-pointer">
                   <img src={Cart} className="w-9 h-7 mt-1 cursor-pointer object-contain" />
                 </div>
+               
               </div>
             </div>
           </div>

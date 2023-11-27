@@ -27,6 +27,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import ProductListCard from '../components/ProductListCard';
 import Button from '../assets/img/slider_button.png'
 import WhyInkPrintNew from '../components/WhyInkPrintNew';
+import Loading from '../components/Loading';
 
 const Home = () => {
  return (
@@ -235,6 +236,8 @@ const Home = () => {
 
       <FindYourFit />
       <HappyClients />
+      
+     
     </>
   );
 }
