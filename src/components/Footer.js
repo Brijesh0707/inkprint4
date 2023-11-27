@@ -11,7 +11,7 @@ function Footer() {
       };
     return (
         <>
-            <div className="pt-8 px-[15px] pb-[60px] block md:hidden text-[14px]">
+            <div className="pt-8 px-[15px] pb-[60px] block md:hidden text-[14px] z-[100]">
                 <h3 className="text-[20px] font-medium mb-[20px] pl-5">
                     Our Products
                 </h3>
