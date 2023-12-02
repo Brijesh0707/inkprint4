@@ -13,6 +13,7 @@ import MyWish from './MyWish';
 import ChangePassword from './ChangePassword';
 import { useNavigate } from 'react-router-dom';
 
+
   
 const MainSideBar = () => {
     const [select,setSelect] = useState("account details");
@@ -61,7 +62,7 @@ const MainSideBar = () => {
     
   return (
    <>
-    <div className='w-full '>
+    <div className='w-full md:hidden'>
       <div className='ml-[5.5vw]'>
       <PageTopNavigation firstRouteLink="/" firstRouteName="Home" secondRouteName="MyAccount"/>
       </div>
@@ -81,7 +82,7 @@ const MainSideBar = () => {
                 <FaTruckFast className={`text-custom-text w-5 h-5 mr-2 ml-2  ${select === 'my orders' ? 'text-white' : 'bg-white'}`} />
                 <p className={`text-black font-medium ${select === 'my orders' ? 'text-white' : 'bg-white'}`}>My Orders</p>
               </ol>
-              <ol className={`flex items-center mt-4 w-[200px] pt-2 pb-2 rounded-[11px] ${select === 'my designs' ? 'bg-[#00A6DB]' : 'bg-white'} cursor-pointer transition-all duration-100`}onClick={()=>setSelect("my designs")}>
+              <ol className={`flex items-center mt-4 w-[200px] pt-2 pb-2 rounded-[11px] ${select === 'my designs' ? 'bg-[#00A6DB]' : 'bg-white'} cursor-pointer transition-all duration-100`} onClick={()=>setSelect("my designs")}>
                 <PiPencilCircle className={`text-custom-text w-5 h-5 mr-2 ml-2  ${select === 'my designs' ? 'text-white' : 'bg-white'}`}  />
                 <p className={`text-black font-medium ${select === 'my designs' ? 'text-white' : 'bg-white'}`}>My Designs</p>
               </ol>
@@ -89,7 +90,7 @@ const MainSideBar = () => {
                 <FaLock className={`text-custom-text w-4 h-4 mr-2 ml-2  ${select === 'change password' ? 'text-white' : 'bg-white'}`} />
                 <p className={`text-black font-medium ${select === 'change password' ? 'text-white' : 'bg-white'}`}>Change Password</p>
               </ol>
-              <ol className='flex items-center w-[200px] mt-[4.5vh] cursor-pointer transition-all duration-300' onClick={handlelogout}>
+              <ol className='flex items-center w-[200px] mt-4 cursor-pointer transition-all duration-300' onClick={handlelogout}>
                 <MdOutlineLogout className='h-5 w-5 mr-2 ml-2 text-custom-text' />
                 <p className='text-black font-medium'>Log Out</p>
               </ol>
@@ -102,6 +103,26 @@ const MainSideBar = () => {
 
         </div>
     </div>
+
+    {/* responsive */}
+    <div className='w-[100%] md:block  hidden'>
+  <div className='top mb-2 mt-2 ml-2 overflow-scroll'>
+  <div className=''>
+      <ul className='flex justify-evenly '>
+        <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === 'account details' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={()=>setSelect("account details")}>Account Details</li>
+        <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === 'my whislist' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={()=>setSelect("my whislist")}>My Wish List</li>
+        <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === 'my orders' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={()=>setSelect("my orders")}>My Orders</li>
+        <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === 'my designs' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={()=>setSelect("my designs")}>My Designs</li>
+        <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === 'change password' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={()=>setSelect("change password")}>Change Password</li>
+        <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === 'my whislist' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={handlelogout}>Log Out</li>
+      </ul>
+    </div>
+  </div>
+  <div className='below'>
+    {renderSelectedComponent()}
+  </div>
+</div>
+
    </>
   )
 }

@@ -58,11 +58,11 @@ const MyOrder = () => {
 
   return (
     <>
-      <div className="w-full">
+      <div className="w-full md:flex justify-center items-center">
         <div className="ml-4">
         <div className="flex justify-between items-center relative">
-        <h1 className="text-[22px] text-black font-medium">My Wishlist</h1>
-        <button className="w-[256px] pl-2 text-[15px] mr-2 flex justify-between items-center rounded-[4px] border-[2px] border-blue mt-3 mb-3 bg-white text-custom-text" onClick={handledropdown}>
+        <h1 className="text-[22px] text-black font-medium">My Orders</h1>
+        <button className="w-[256px] md:w-[25vw] smm:w-[20pvw] sl:w-[50vw] pl-2 text-[15px] mr-2 flex justify-between items-center rounded-[4px] border-[2px] border-blue mt-3 mb-3 bg-white text-custom-text" onClick={handledropdown}>
           {filer} <img src={filter2 ? Up : Down} className="w-3 h-2 mr-2" />
           </button>
           {filter2 &&

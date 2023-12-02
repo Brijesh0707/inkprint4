@@ -18,7 +18,8 @@ const ChangePassword = () => {
   };
 
   return (
-    <div className='w-full'>
+    <>
+    <div className='w-full md:hidden'>
       <div className='wrapper w-[66vw] ml-8 border-[1.7px] border-[#00A6DB] rounded-[22px]'>
         <h1 className='text-[28px] text-black pt-2 pl-4 font-medium'>Change Password</h1>
         <form className='ml-4'>
@@ -81,6 +82,76 @@ const ChangePassword = () => {
         </form>
       </div>
     </div>
+
+    {/* // responsive */}
+    <div className='w-full hidden md:flex justify-center items-center '>
+      <div className='wrapper w-[66vw] md:w-[90vw] ml-8 md:ml-0 border-[1.7px] border-[#00A6DB] rounded-[22px]'>
+        <h1 className='text-[28px] text-black md:text-[16px] pt-2 pl-4 font-medium'>Change Password</h1>
+        <form className='ml-4 md:ml-2'>
+          <div className='mt-4'>
+            <label htmlFor='currentPassword' className='text-custom-text-grey cursor-pointer'>
+              Current Password <span className='text-red-500'>*</span>
+            </label>
+            <div className='border-[1.7px] border-[#DDDDDE] w-[98%] pl-2 rounded-[4px] flex'>
+              <input
+                type={passwordToggle ? 'password' : 'text'}
+                id='currentPassword'
+                placeholder='Current Password'
+                className='pl-2 w-[97%] outline-none pt-1 pb-1'
+              />
+              <button type='button' onClick={handlePasswordToggle}>
+                {passwordToggle ? <BsFillEyeSlashFill className='md:text-[12px]' /> : <BsFillEyeFill className='md:text-[12px]' />}
+              </button>
+            </div>
+          </div>
+          <div className='mt-4'>
+            <label htmlFor='currentPassword' className='text-custom-text-grey cursor-pointer'>
+              New Password <span className='text-red-500'>*</span>
+            </label>
+            <div className='border-[1.7px] border-[#DDDDDE] w-[98%] pl-2 rounded-[4px] flex'>
+              <input
+                type={passwordToggle2 ? 'password' : 'text'}
+                id='currentPassword'
+                placeholder='New Password'
+                className='pl-2 w-[97%] outline-none pt-1 pb-1'
+              />
+              <button type='button' onClick={handlePasswordToggle2}>
+                {passwordToggle2 ? <BsFillEyeSlashFill className='md:text-[12px]' /> : <BsFillEyeFill className='md:text-[12px]' />}
+              </button>
+            </div>
+          </div>
+          <div className='mt-4'>
+            <label htmlFor='currentPassword' className='text-custom-text-grey cursor-pointer'>
+              Comfirm Password <span className='text-red-500'>*</span>
+            </label>
+            <div className='border-[1.7px] border-[#DDDDDE] w-[98%] pl-2 rounded-[4px] flex'>
+              <input
+                type={passwordToggle3 ? 'password' : 'text'}
+                id='currentPassword'
+                placeholder='Comfirm Password'
+                className='pl-2 w-[97%] outline-none pt-1 pb-1'
+              />
+              <button type='button' onClick={handlePasswordToggle3}>
+                {passwordToggle3 ? <BsFillEyeSlashFill className='md:text-[12px]' /> : <BsFillEyeFill className='md:text-[12px]' />}
+              </button>
+            </div>
+          </div>
+
+       
+          
+          <div className='mt-4 mb-4'>
+            <CtnBtn className='mt-[32px] w-[130px] h-[38px] md:w-[90px] md:h-[36px]  font-semibold bg-[#949494] text-white rounded cursor-pointer md:mt-0 md:text-[11px] text-[12px] flex items-center justify-center'>
+              Save Changes
+            </CtnBtn>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    </>
+    
   );
 };
 

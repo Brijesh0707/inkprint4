@@ -5,7 +5,7 @@ import { FaPencil } from "react-icons/fa6";
 const MyWish = () => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full md:flex justify-center items-center">
         <div className="ml-4">
           <h1 className="text-[22px] text-black font-medium">My Wishlist</h1>
           <br />
@@ -61,6 +61,7 @@ const MyWish = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };
