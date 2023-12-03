@@ -27,6 +27,8 @@ import { FiArrowUpRight } from "react-icons/fi";
 import ProductListCard from '../components/ProductListCard';
 import Button from '../assets/img/slider_button.png'
 import WhyInkPrintNew from '../components/WhyInkPrintNew';
+import Loading from '../components/Loading';
+import StockPackage from '../components/StockPackage';
 
 const Home = () => {
  return (
@@ -173,8 +175,8 @@ const Home = () => {
 </div>
         <div className='main_slider w-[95%] ml-10 mt-8 mb-8 md:ml-0'>
           <Swiper
-            slidesPerView={window.innerWidth<=500?1.75:4.2}
-            spaceBetween={20}
+            slidesPerView={window.innerWidth<=500?1.75:5.8}
+            spaceBetween={30}
             navigation={{
               nextEl: ".swiper_button_next",
               prevEl: ".swiper_button_prev",
@@ -199,11 +201,13 @@ const Home = () => {
 
       </div>
 
+      <StockPackage />
+
       {/* this is why inkprint section */}
       <WhyInkPrintNew/>
       
 
-      <div className='aboutus-hero bg-[#ECDFD8] px-[60px] md:px-[12px] md:py-[12px] py-[37px] flex justify-center items-center'>
+      {/* <div className='aboutus-hero bg-[#ECDFD8] px-[60px] md:px-[12px] md:py-[12px] py-[37px] flex justify-center items-center'>
         <div className='about-wrapp '>
           <div className='about-wrapper  top-[50px] md:top-[50px] left-[180px] lg:left-[150px] md:right-[500px] rounded-[25px] p-[32px]  md:border-none md:p-0 md:shadow-none'>
             <h2 className='text-custom-text-p font-medium text-[32px] md:text-[14px] mb-[27px] md:mb-[12px]'>About Us</h2>
@@ -215,26 +219,27 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className='partners mx-[60px] md:mx-[12px] mt-[100px] md:mt-[24px]'>
         <div className='ourpartner flex items-center'>
           <h1 className='text-[#000000] text-[32px] md:text-[14px]'>Our Partners</h1>
           
         </div>
         <div className='partners-images flex justify-between items-center mt-[40px] md:mt-[12px]'>
-
-          <img src={partner} alt='ficci image' className='partner_image h-[90px] w-[120px] object-contain md:h-[27px]' />
-          <img src={partner2} alt='honda image' className='partner_image h-[90px] w-[120px] object-contain md:h-[27px]' />
-          <img src={partner3} alt='ixigo image' className='partner_image h-[90px] w-[120px] mt-3 object-contain md:h-[27px]' />
-          <img src={partner4} alt='live mint image' className='partner_image h-[90px] w-[120px] mt-3 object-contain md:h-[27px]' />
-          <img src={partner5} alt='harvard business review image' className='partner_image h-[90px] w-[120px] mt-3 object-contain md:h-[27px]' />
-          <img src={partner6} alt='oxford image' className='partner_image h-[90px] w-[120px] object-contain md:h-[27px]' />
+          <img src={partner} alt='ficci image' className='partner_image h-[90px] w-[120px] md:h-[45px] md:w-[60px] object-contain' />
+          <img src={partner2} alt='honda image' className='partner_image h-[80px] w-[100px]  md:h-[45px] md:w-[60px] object-contain' />
+          <img src={partner3} alt='ixigo image' className='partner_image h-[90px] w-[120px] md:h-[45px] md:w-[60px] mt-3 object-contain' />
+          <img src={partner4} alt='live mint image' className='partner_image h-[90px] w-[120px] md:h-[45px] md:w-[60px]  mt-3 object-contain' />
+          <img src={partner5} alt='harvard business review image' className='partner_image h-[90px] w-[120px]  md:h-[45px] md:w-[60px] mt-3 object-contain' />
+          <img src={partner6} alt='oxford image' className='partner_image h-[70px] w-[90px]  md:h-[45px] md:w-[60px]  object-contain' />
 
         </div>
       </div>
 
       <FindYourFit />
       <HappyClients />
+      
+     
     </>
   );
 }

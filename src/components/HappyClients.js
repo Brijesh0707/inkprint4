@@ -31,7 +31,7 @@ const HappyClients = () => {
 
       <div className='relative mt-[70px] mb-[70px] md:mt-[12px] md:mt-[32px] '>
         <Swiper
-          slidesPerView={window.innerWidth<500 ? 1.2: 2.5}
+          slidesPerView={window.innerWidth<500 ? 1.2: 2.7}
           spaceBetween={30}
          pagination={false}
           navigation={{

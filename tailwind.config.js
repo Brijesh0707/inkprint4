@@ -20,6 +20,9 @@ module.exports = {
 
         'sm': {'max': '640px'},
         // => @media (max-width: 639px) { ... }
+        'sl':{'max':'425px'},
+        'smm':{'max':'372px'},
+        'ss':{'max':'320px'},
         
       },
       backgroundColor: {
@@ -37,19 +40,22 @@ module.exports = {
         'custom-text-grey': '#6D6E70',
         'custom-text-darkGrey': '#6D6E70',
         'custom-text-green': '#A7C539',
-        'custom-navbarGrey': '#777777'
+        'custom-navbarGrey': '#777777',
+        'custom-light-grey': '#ADADAD'
       },
       borderColor: {
         'blue': '#00A6DB',
         'grayLight': '#DDDDDE',
         'grayMid': '#ADADAD',
-        'green': '#A7C539'
+        'green': '#A7C539',
+        'darkgrey':'#6D6E70'
       },
       colors: {
         'shadowGreen': '#AFC40C',
       },
       fontFamily: {
-        inter: ['Inter']
+        inter: ['Inter'],
+        lato: ['Lato']
       }
     },
   },
