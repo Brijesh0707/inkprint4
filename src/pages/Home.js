@@ -43,10 +43,10 @@ const Home = () => {
               Elevate Your Brand with InkPrint: Unleash the Power of 
               <span className='text-custom-text-hero'> Exceptional Packaging Solutions and Design Expertise.</span>
             </h1>
-            <p className='text-custom-text-darkGrey font-light text-[22px] pt-10 ll:pt-3 md:pt-[6px] md:text-[14px]'>Your Brand, Our Box: Crafting Packaging Magic with<br /> InkPrint.</p>
+            <p className='text-custom-text-darkGrey font-light text-[22px] pt-10 ll:pt-3 md:pt-[6px] md:text-[14px] md:leading-[17px]'>Your Brand, Our Box: Crafting Packaging Magic with<br /> InkPrint.</p>
 
             <div className='explore_btn mt-[50px] md:mt-[12px]'>
-              <button className='w-[200px] md:w-[109px] h-[40px] md:h-[35px] bg-custom-btn flex items-center justify-center text-white text-[20px] md:text-[12px] rounded-[4px] hover:bg-custom-btn-dark transition duration-300'>Explore more <FiArrowUpRight className='ml-2' /></button>
+              <button className='w-[200px] md:w-[109px] h-[40px] md:h-[35px] bg-custom-btn flex items-center justify-center text-white text-[20px] md:text-[12px] rounded-[4px] hover:bg-custom-btn-dark transition duration-300'>Explore more <FiArrowUpRight className='ml-2 md:ml-1' /></button>
             </div>
             <div className='trusted_company mt-10 md:mt-[12px]'>
               <p className='text-[16px] md:text-[11px] text-custom-text-darkGrey'>Trusted by Companies like:</p>
@@ -162,21 +162,21 @@ const Home = () => {
       </div> */}
 
       {/* this is product slider  */}
-      <div className='w-[100%] bg-[#F6F8FA] mt-10 mb-10'>
-        <div className='Packaging_printing_text ml-[55px] text-[27px] font-medium mt-5'>
+      <div className='w-[100%] bg-[#F6F8FA] mt-10 mb-10 md:px-[12px] pb-[1px]'>
+        <div className='Packaging_printing_text ml-[55px] text-[27px] font-medium mt-5 md:ml-0 md:text-[14px]'>
           <h1 className='pt-5'>Packaging printing</h1>
         </div>
         <div className='slider_container w-[100%]'>
         <div className='slider_controller flex flex-col justify-end'>
-  <div className='flex controller items-center absolute mt-5 right-5'>
-    <img src={Button} className='swiper_button_prev w-[20px] h-[14px] rotate-180 mt-[2px] cursor-pointer'/>
-    <img src={Button} className='swiper_button_next w-[20px] h-[14px] ml-5 cursor-pointer'/>
+  <div className='flex controller items-center absolute mt-5 right-5 md:mt-0'>
+    <img src={Button} className='swiper_button_prev w-[20px] h-[14px] rotate-180 mt-[2px] cursor-pointer md:h-[8px] md:w-[14px]'/>
+    <img src={Button} className='swiper_button_next w-[20px] h-[14px] ml-5 cursor-pointer md:h-[8px] md:w-[14px]'/>
   </div>
 </div>
-        <div className='main_slider w-[95%] ml-10 mt-8 mb-8'>
+        <div className='main_slider w-[95%] ml-10 mt-8 mb-8 md:ml-0'>
           <Swiper
-            slidesPerView={4.2}
-            spaceBetween={20}
+            slidesPerView={window.innerWidth<=500?1.75:4.3}
+            spaceBetween={24}
             navigation={{
               nextEl: ".swiper_button_next",
               prevEl: ".swiper_button_prev",
@@ -226,7 +226,6 @@ const Home = () => {
           
         </div>
         <div className='partners-images flex justify-between items-center mt-[40px] md:mt-[12px]'>
-
           <img src={partner} alt='ficci image' className='partner_image h-[90px] w-[120px] md:h-[45px] md:w-[60px] object-contain' />
           <img src={partner2} alt='honda image' className='partner_image h-[80px] w-[100px]  md:h-[45px] md:w-[60px] object-contain' />
           <img src={partner3} alt='ixigo image' className='partner_image h-[90px] w-[120px] md:h-[45px] md:w-[60px] mt-3 object-contain' />

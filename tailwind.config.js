@@ -54,9 +54,11 @@ module.exports = {
         'shadowGreen': '#AFC40C',
       },
       fontFamily: {
-        inter: ['Inter']
+        inter: ['Inter'],
+        lato: ['Lato']
       }
     },
   },
+  important: true,
   plugins: [],
 };

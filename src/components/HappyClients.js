@@ -24,9 +24,9 @@ const HappyClients = () => {
       <div className='find_your_fit flex items-center'>
         <h1 className='text-[32px] md:text-[14px]'>Happy Clients</h1>
       </div>
-      <div className='flex controller items-center absolute mt-5 right-[50px]'>
-    <img src={Button} className='swiper_button_prev_1 w-[20px] h-[14px] rotate-180 mt-[2px] cursor-pointer'/>
-    <img src={Button} className='swiper_button_next_1 w-[20px] h-[14px] ml-5 cursor-pointer'/>
+      <div className='flex controller items-center absolute mt-5 right-[50px] md:mt-[-20px]'>
+    <img src={Button} className='swiper_button_prev_1 w-[20px] h-[14px] rotate-180 mt-[2px] cursor-pointer md:h-[8px] md:w-[14px]'/>
+    <img src={Button} className='swiper_button_next_1 w-[20px] h-[14px] ml-5 cursor-pointer md:h-[8px] md:w-[14px]'/>
   </div>
 
       <div className='relative mt-[70px] mb-[70px] md:mt-[12px] md:mt-[32px] '>
@@ -49,28 +49,28 @@ const HappyClients = () => {
           
          <SwiperSlide className='pt-[40px]'>
             <div className='relative flex flex-col items-center h-[200px] md:h-[213px] px-[10px] border-2 border-[#00A6DB] rounded-[15px]'>
-              <img src={Profile} alt="client's profile picture" className='w-[70px] cursor-pointer h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px]'/>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] cursor-pointer h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px] px-[5px] bg-white'/>
               <p className='text-[11px] md:text-[12px] cursor-pointer'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
               <p className='text-custom-text-darkGrey cursor-pointer mt-[20px] md:text-[12px] md:mt-[20px] text-[13px]'>Saumya Garg</p>
             </div>
           </SwiperSlide>
           <SwiperSlide className='pt-[40px]'>
             <div className='relative flex flex-col items-center h-[200px] md:h-[213px] px-[10px] border-2 border-[#00A6DB] rounded-[15px]'>
-              <img src={Profile} alt="client's profile picture" className='w-[70px] cursor-pointer h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px]'/>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] cursor-pointer h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px] px-[5px] bg-white'/>
               <p className='text-[11px] md:text-[12px] cursor-pointer'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
               <p className='text-custom-text-darkGrey cursor-pointer mt-[20px] md:text-[12px] md:mt-[20px] text-[13px]'>Saumya Garg</p>
             </div>
           </SwiperSlide>
           <SwiperSlide className='pt-[40px]'>
             <div className='relative flex flex-col items-center h-[200px] md:h-[213px] px-[10px] border-2 border-[#00A6DB] rounded-[15px]'>
-              <img src={Profile} alt="client's profile picture" className='w-[70px] cursor-pointer h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px]'/>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] cursor-pointer h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px] px-[5px] bg-white'/>
               <p className='text-[11px] md:text-[12px] cursor-pointer'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
               <p className='text-custom-text-darkGrey cursor-pointer mt-[20px] md:text-[12px] md:mt-[20px] text-[13px]'>Saumya Garg</p>
             </div>
           </SwiperSlide>
           <SwiperSlide className='pt-[40px]'>
             <div className='relative flex flex-col items-center h-[200px] md:h-[213px] px-[10px] border-2 border-[#00A6DB] rounded-[15px]'>
-              <img src={Profile} alt="client's profile picture" className='w-[70px] cursor-pointer h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px]'/>
+              <img src={Profile} alt="client's profile picture" className='w-[70px] cursor-pointer h-[70px] md:w-[40px] md:h-[40px] translate-y-[-35px] md:translate-y-[-20px] px-[5px] bg-white'/>
               <p className='text-[11px] md:text-[12px] cursor-pointer'>At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.At InkPrint, we are more than just a printing company; we are your creative partners in bringing your ideas to life.</p>
               <p className='text-custom-text-darkGrey cursor-pointer mt-[20px] md:text-[12px] md:mt-[20px] text-[13px]'>Saumya Garg</p>
             </div>
