@@ -12,210 +12,210 @@ function Footer() {
       };
     return (
         <>
-            <div className="pt-8 px-[15px] pb-[60px] block md:hidden text-[14px] z-[100]">
+            <div className="pt-8 px-[15px] pb-[60px] block md:hidden text-[14px] z-[100] text-[#2F2F2F]">
                 <h3 className="text-[20px] font-medium mb-[20px] pl-5">
                     Our Products
                 </h3>
                 <div className="flex justify-between lg:justify-around text-[14px] ml-5 mr-5">
                     <ul>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Monocarton Box Packaging</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Carry Bags</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Custom Tissue Papers</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Gift Vouchers</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Hang Tags</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Header Cards/ Bag Toppers</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Placemats</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Printed Butter Papers</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Printed Packaging Tapes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Product Labels & Stickers</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Wrapping Papers</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Food Delivery Bags</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Master Cartons</Link>
                         </ol>
                     </ul>
                     <ul>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">3 Ply Corrugated Boxes </Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">5 Ply Corrugated Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Bakery Packaging Material</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Cake Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Snacks Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Dosa Packaging Box</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Rolls Packaging Box</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Salad Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Sandwich Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Noodles Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Burger Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Multicolor Corrugated Mailer Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] ml-3 font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px] ml-3">
                             <Link to="/">Multicolor Corrugated Product Boxes</Link>
                         </ol>
                     </ul>
                     <ul>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Shredded Paper Fills</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Honey Comb Packaging Rolls</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Packaging Sleeves</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Rigid Gift Boxes/ Paper Board Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Magnetic Gift Boxes/ Paper Board Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Sliding Gift Boxes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Bill Books</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Booklets</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Bookmarks</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Brochures</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Business cards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Calendars</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Canvas Prints</Link>
                         </ol>
                     </ul>
                     <ul>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Brochures</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Business Cards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Carbonless Forms</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Catalogs</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Embossed Foil Business Cards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Embossed Spot UV Business Cards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Envelopes</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Flyers</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">High Texture Luxury Visiting Cards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">ID Cards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Invitation Cards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Lanyards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Letterheads</Link>
                         </ol>
                     </ul>
                     <ul>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Magazines</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Medical Prescription Pads</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Menus</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Notebooks</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Notepads</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Postcards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Posters</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Sandwich Business Cards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Stickers & Labels</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Ultra Thick Business Cards</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Vinyl Prints & Posters(Large)</Link>
                         </ol>
-                        <ol className="text-custom-text-grey hover:text-custom-text-green transition duration-300 py-[8px] font-light">
+                        <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Visiting Cards</Link>
                         </ol>
                     </ul>
@@ -223,7 +223,7 @@ function Footer() {
                 <div className="flex justify-center mx-[400px] my-[40px]">
                     <hr className="border-t-2 border-green w-full" />
                 </div>
-                <div className="font-light text-custom-text-grey text-[14px] flex justify-between">
+                <div className="text-[14px] flex justify-between">
                     <div className="w-1/5 mr-10">
                       <Link to='/'>
                       <img src={Logo} alt="inkprint logo" />
@@ -237,19 +237,19 @@ function Footer() {
                             Information
                         </h3>
                         <ul>
-                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                            <ol className="mb-[16px] hover:text-custom-text transition duration-300">
                                 <Link to="/aboutus">About Us</Link>
                             </ol>
-                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                            <ol className="mb-[16px] hover:text-custom-text transition duration-300">
                                 <Link to="/contactus">Contact Us</Link>
                             </ol>
-                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                            <ol className="mb-[16px] hover:text-custom-text transition duration-300">
                                 <Link to="/blogs">Blog</Link>
                             </ol>
-                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                            <ol className="mb-[16px] hover:text-custom-text transition duration-300">
                                 <Link to="/privacypolicy">Privacy Policy</Link>
                             </ol>
-                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                            <ol className="mb-[16px] hover:text-custom-text transition duration-300">
                                 <Link to="/termsandconditions">Terms &amp; Conditions</Link>
                             </ol>
                         </ul>
@@ -259,16 +259,16 @@ function Footer() {
                             My Account
                         </h3>
                         <ul>
-                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                            <ol className="mb-[16px] hover:text-custom-text transition duration-300">
                                 <Link to="/">Account Details</Link>
                             </ol>
-                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                            <ol className="mb-[16px] hover:text-custom-text transition duration-300">
                                 <Link to="/">Orders</Link>
                             </ol>
-                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                            <ol className="mb-[16px] hover:text-custom-text transition duration-300">
                                 <Link to="/">Wishlist</Link>
                             </ol>
-                            <ol className="mb-[16px] hover:text-custom-text-green transition duration-300">
+                            <ol className="mb-[16px] hover:text-custom-text transition duration-300">
                                 <Link to="/">Cart</Link>
                             </ol>
                         </ul>
@@ -278,41 +278,41 @@ function Footer() {
                             Follow Us On
                         </h3>
                         <ul className="flex  text-[25px]"> 
-                            <ol className="hover:text-custom-text-green transition duration-300 mr-[13px]">
+                            <ol className=" mr-[13px]">
                                 <Tooltip label="instagram" className="bg-black text-white text-[12px] px-[2px]">
                                     <Link to="https://www.instagram.com/inkprintindia/">
-                                        <AiFillInstagram />
+                                        <AiFillInstagram className="text-[#2F2F2F] hover:text-custom-text transition duration-300"/>
                                     </Link>
                                 </Tooltip>
                             </ol>
 
-                            <ol className="hover:text-custom-text-green transition duration-300 mr-[13px]">
+                            <ol className="mr-[13px]">
                                 <Tooltip label="facebook" className="bg-black text-white text-[12px] px-[2px]">
                                     <Link to="https://www.facebook.com/inkprintdotin/">
-                                        <AiFillFacebook />
+                                        <AiFillFacebook className="text-[#2F2F2F] hover:text-custom-text transition duration-300"/>
                                     </Link>
                                 </Tooltip>
                             </ol>
-                            <ol className="hover:text-custom-text-green transition duration-300 mr-[13px]">
-                                <Tooltip label="Linkedin " className="bg-black text-white text-[12px] px-[2px]">
+                            <ol className="mr-[13px]">
+                                <Tooltip label="linkedin " className="bg-black text-white text-[12px] px-[2px]">
                                     <Link to="https://www.linkedin.com/company/turtle-media/">
-                                    <FaLinkedin />
+                                    <FaLinkedin className="text-[#2F2F2F] hover:text-custom-text transition duration-300 "/>
 
                                     </Link>
                                 </Tooltip>
                             </ol>
 
-                            <ol className="hover:text-custom-text-green transition duration-300 mr-[13px]">
+                            <ol className="mr-[13px]">
                                 <Tooltip label="youtube" className="bg-black text-white text-[12px] px-[2px]">
                                     <Link to="https://www.youtube.com/channel/UCeMSYFOa54p2ChOOUPlPjpA">
-                                        <TfiYoutube />
+                                        <TfiYoutube className="text-[#2F2F2F] hover:text-custom-text transition duration-300 "/>
                                     </Link>
                                 </Tooltip>
                             </ol>
                         </ul>
                     </div>
-                    <div className="w-1/5">
-                        <h3 className="text-[20px] font-medium mb-[20px] text-black">
+                    <div className="w-1/5 text-[#2F2F2F]">
+                        <h3 className="text-[20px] font-medium mb-[20px]">
                             Address
                         </h3>
                         <p>
@@ -320,13 +320,13 @@ function Footer() {
                             New Delhi - 110020, India
                         </p>
                         <p className="py-[10px]">
-                            <span className="font-medium">
+                            <span className="font-semibold">
                                 Phone:
                             </span>
                             <a href="tel:9772906080"> +91-977-290-6080 (India)</a>
                         </p>
                         <p>
-                            <span className="font-medium">Email: </span>
+                            <span className="font-semibold">Email: </span>
                             <a href="mailto:contact@inkprint.in">Contact@Inkprint.In</a>
                         </p>
                     </div>

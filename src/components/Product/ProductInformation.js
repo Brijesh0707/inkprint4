@@ -5,6 +5,7 @@ import { IoIosArrowUp } from "react-icons/io";
 import ProductDiscription from './ProductDiscription';
 import ProductAdditionalInformation from './ProductAdditionalInformation';
 import ProductFAQ from './ProductFAQ';
+import ProductReviews from './ProductReviews';
 
 function ProductInformation() {
     const [active, setActive] = useState({ a1: true, a2: false, a3: false, a4: false });
@@ -26,7 +27,7 @@ function ProductInformation() {
         }
     }
     return (
-        <div className={`flex justify-between w-full relative ${expand ? 'max-h-full h-full overflow-visible' : 'max-h-[30rem] h-[30rem] overflow-hidden'}`}>
+        <div className={`mt-[60px] flex justify-between w-full relative ${expand ? 'max-h-full h-full overflow-visible' : 'max-h-[30rem] h-[30rem] overflow-hidden'}`}>
             <Tabs>
                 <TabList>
                     <Tab className={`${active.a1 ? 'border-black' : 'border-white'} border-b-2 py-[14px] px-[10px] text-[20px] mr-[24px]`} onClick={() => handleActive(1)}>Description</Tab>
@@ -46,7 +47,7 @@ function ProductInformation() {
                         <ProductFAQ/>
                     </TabPanel>
                     <TabPanel>
-                        <p>three!</p>
+                        <ProductReviews/>
                     </TabPanel>
                 </TabPanels>
             </Tabs>

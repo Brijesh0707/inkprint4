@@ -175,8 +175,8 @@ const Home = () => {
 </div>
         <div className='main_slider w-[95%] ml-10 mt-8 mb-8 md:ml-0'>
           <Swiper
-            slidesPerView={window.innerWidth<=500?1.75:5.8}
-            spaceBetween={30}
+            slidesPerView={window.innerWidth<=500?1.75:4.3}
+            spaceBetween={24}
             navigation={{
               nextEl: ".swiper_button_next",
               prevEl: ".swiper_button_prev",
