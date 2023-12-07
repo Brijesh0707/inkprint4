@@ -22,7 +22,7 @@ const FindYourFit = () => {
         <div className="find_your_fit flex items-center">
           <h1 className="text-[32px] md:text-[14px]">Find Your Fit</h1>
         </div>
-        <div className='flex controller items-center absolute mt-5 right-5 md:mt-[-20px]'>
+        <div className='flex controller items-center absolute mt-5 right-5 md:mt-[-20px] md:hidden'>
     <img src={Button} className='swiper_button_prev w-[20px] h-[14px] rotate-180 mt-[2px] cursor-pointer md:h-[8px] md:w-[14px]'/>
     <img src={Button} className='swiper_button_next w-[20px] h-[14px] ml-5 cursor-pointer md:h-[8px] md:w-[14px]'/>
   </div>
@@ -37,6 +37,17 @@ const FindYourFit = () => {
                 clickable: true,
               }}
             modules={[Pagination, Navigation]}
+            breakpoints={{
+      500: {
+        slidesPerView: 1.75,
+      },
+      768: {
+        slidesPerView: 2.5, 
+      },
+      1024: {
+        slidesPerView: 2.90,
+      },
+    }}
             className="mySwiper"
           >
             <SwiperSlide>

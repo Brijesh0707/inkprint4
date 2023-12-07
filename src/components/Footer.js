@@ -4,10 +4,14 @@ import Logo from '../assets/img/Logo.png';
 import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import { TfiYoutube } from "react-icons/tfi";
 import { FaLinkedin } from "react-icons/fa6";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Footer() {
     const handleInstagramClick = () => {
-        // Redirect to Instagram
         window.location.href = 'https://www.instagram.com/inkprintindia';
       };
     return (
@@ -16,7 +20,7 @@ function Footer() {
                 <h3 className="text-[20px] font-medium mb-[20px] pl-5">
                     Our Products
                 </h3>
-                <div className="flex justify-between lg:justify-around text-[14px] ml-5 mr-5">
+                <div className="flex justify-between lg:justify-around text-[14px] ml-5 mr-5 md:hidden">
                     <ul>
                         <ol className="hover:text-custom-text transition duration-300 py-[8px]">
                             <Link to="/">Monocarton Box Packaging</Link>
@@ -332,7 +336,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="md:block hidden p-[16px]">
+            <div className="md:hidden hidden p-[16px]">
                 <div>
                     <h4 className="text-[14px] font-semibold text-custom-text-darkGrey">Our Products</h4>
                     <div className="flex justify-between text-[8px]">
@@ -616,6 +620,168 @@ function Footer() {
                         </div>
                     </div> 
                 </div>
+            </div>
+            {/* this section for mobile footer */}
+            <div className="w-[100%] hidden md:block">
+            <div className="w-[100%] mt-10 pl-5 mb-6">
+                <h1 className="text-[15px] text-black font-medium">Products & Categories</h1>
+            </div>
+               <div className="w-[60vw]">
+              <Accordion>
+              <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className="text-[14px]">Printing Packaging</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+              </Accordion>
+              <Accordion>
+              <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+         <Typography className="text-[14px]">Visiting cards</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+              </Accordion>
+              <Accordion>
+              <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+         <Typography className="text-[14px]">Business Essentials</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+              </Accordion>
+              <Accordion>
+              <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+         <Typography className="text-[14px]">Marketing Essentials</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+              </Accordion>
+              <Accordion>
+              <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+        <Typography className="text-[14px]">Display Products</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          </Typography>
+        </AccordionDetails>
+              </Accordion>
+               </div>
+
+               <div className="flex justify-center mx-[10px] my-[40px] ">
+                        <hr className="border-t-2 border-green w-1/3" />
+                    </div>
+                    <div className="flex ml-[5vw]">
+                        <div className="w-[200px]">
+                            <h4 className="text-[14px] font-semibold text-custom-text-darkGrey mb-[10px]">Information</h4>
+                            <ul>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300  text-[8px] text-custom-text-grey">
+                                <Link to="/aboutus">About Us</Link>
+                            </ol>
+                            <ol className="mb-[06px] hover:text-custom-text-green transition duration-300  text-[8px] text-custom-text-grey">
+                                <Link to="/contactus">Contact Us</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300  text-[8px] text-custom-text-grey">
+                                <Link to="/blogs">Blog</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300  text-[8px] text-custom-text-grey">
+                                <Link to="/privacypolicy">Privacy Policy</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300  text-[8px] text-custom-text-grey">
+                                <Link to="/termsandconditions">Terms &amp; Conditions</Link>
+                            </ol>
+                        </ul>
+                        </div>
+                        <div className="">
+                        <h4 className="text-[14px] font-semibold text-custom-text-darkGrey mb-[10px]">My Account</h4>
+                        <ul>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300 text-[8px] text-custom-text-grey">
+                                <Link to="/">Account Details</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300 text-[8px] text-custom-text-grey">
+                                <Link to="/">Orders</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300 text-[8px] text-custom-text-grey">
+                                <Link to="/">Wishlist</Link>
+                            </ol>
+                            <ol className="mb-[10px] hover:text-custom-text-green transition duration-300 text-[8px] text-custom-text-grey">
+                                <Link to="/">Cart</Link>
+                            </ol>
+                        </ul>
+                        </div>
+                    </div>
+                    <div className="mt-[24px] text-custom-text-grey text-[8px] w-3/4 ml-[5vw]">
+                        <h4 className="text-[14px] font-semibold text-custom-text-darkGrey mb-[10px]">Address</h4>
+                        <p>Turtle Media Pvt. Ltd., 9 DSIDC Sheds, IInd Floor, Okhla Industrial Area Phase I, New Delhi - 110020, India</p>
+                        <p className="py-[8px]">
+                            <span className="font-medium">
+                                Phone:
+                            </span>
+                            <a href="tel:9772906080"> +91-977-290-6080 (India)</a>
+                        </p>
+                        <p>
+                            <span className="font-medium">Email: </span>
+                            <a href="mailto:contact@inkprint.in">Contact@Inkprint.In</a>
+                        </p>
+                    </div>
+                    <div className="mt-[30px] flex ml-[5vw] mb-[2vh]">
+                        <div>
+                            <img src={Logo} alt="logo" className="w-[78px]"/>
+                            
+                            <p className="text-custom-text-grey text-[8px] w-10/12">
+                            Copyright &copy; 2023 <span className="text-custom-text-green">Inkprint</span>, All Rights Reserved.
+                        </p>
+                        </div>
+                        <div>
+                            <h4 className="text-[14px] font-semibold text-custom-text-darkGrey mb-[10px]">Follow Us On</h4>
+                            <div>
+                            <ul className="flex text-[16px] text-custom-text-grey">
+                            
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]" onClick={handleInstagramClick}><AiFillInstagram /></ol>
+                            
+                            <ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><Link to="/"><AiFillFacebook /></Link></ol>
+                           <Link to="https://youtu.be/hgJnnMcSQNA?si=kyrlysE-zI5G34T8"><ol className="hover:text-custom-text-green transition duration-300 mr-[10px]"><TfiYoutube /></ol></Link>
+                            
+                        </ul>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </>
     )
