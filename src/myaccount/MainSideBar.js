@@ -114,7 +114,7 @@ const MainSideBar = () => {
         <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === 'my orders' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={()=>setSelect("my orders")}>My Orders</li>
         <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === 'my designs' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={()=>setSelect("my designs")}>My Designs</li>
         <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === 'change password' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={()=>setSelect("change password")}>Change Password</li>
-        <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === 'my whislist' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={handlelogout}>Log Out</li>
+        <li className={`text-custom-light-grey text-[1.9vw] cursor-pointer ${select === '' ? 'text-[#6D6E70] font-semibold border-b-2  border-[darkgrey]' : 'text-custom-light-grey'} `} onClick={handlelogout}>Log Out</li>
       </ul>
     </div>
   </div>

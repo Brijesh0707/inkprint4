@@ -13,12 +13,14 @@ const ProductListCard = ({image,text}) => {
 
 
   //  </>
-  <div className="bg-transparent">
-    <div className="w-full flex justify-center overflow-hidden rounded-[12px]">
-      <img src={image} alt={text} className="h-full w-full"/>
+  <>
+  <div className="bg-[#f6f8fa]">
+    <div className=" flex justify-center overflow-hidden  mt-3 rounded-[12px]">
+      <img src={image} alt={text} className="h-[90%] w-[90%]"/>
     </div>
-    <p>{text}</p>
+    <p className="text-left text-[12px] pl-[1.5vw]">{text}</p>
   </div>
+  </>
   )
 }
 
